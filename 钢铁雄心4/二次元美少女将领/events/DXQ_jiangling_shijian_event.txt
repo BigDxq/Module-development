@@ -1,0 +1,179 @@
+add_namespace = DXQ_jiangling_event
+
+#初音演唱（初音个人专属事件）
+news_event = {
+    id = DXQ_jiangling_event.2001
+    title = DXQ_jiangling_event.2001.a
+    desc = DXQ_jiangling_event.2001.b
+    picture = GFX_chuyinyanchang
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_event.2001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development2001_tip
+		add_ideas = DXQ_jiangling_chuyin
+	}
+}
+#触发科技（惠惠专属事件）
+news_event = {
+    id = DXQ_jiangling_event.3001
+    title = DXQ_jiangling_event.3001.a
+    desc = DXQ_jiangling_event.3001.b
+    picture = GFX_huihuihebao
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.3001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development3001_tip
+		set_technology = { nuclear_reactor = 1 }
+		set_technology = { nukes = 1 }
+		   }
+}
+#触发事件：肾虚（游玩者专属事件）
+news_event = {
+    id = DXQ_jiangling_event.400
+    title = DXQ_jiangling_event.400.a
+    desc = DXQ_jiangling_event.400.b
+    picture = GFX_shenxu
+    major=no
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_event.400.c
+		ai_chance = { factor = 0 } 
+		custom_effect_tooltip = DXQ_jiangling_development400_tip
+		add_ideas = DXQ_jiangling_shenxu
+	}
+}
+#触发群情激愤（强制招募隐藏事件）强制招募隐藏事件
+country_event = {
+    id = DXQ_jiangling_event.4001
+    title = DXQ_jiangling_event.4001.a
+    desc = DXQ_jiangling_event.4001.b
+    picture = GFX_qunqingjifenyi
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.4001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development4001_tip
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.5001
+				days = 180
+			}
+		}
+	}
+	option = {  
+	    name = DXQ_jiangling_event.4001.d
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development4001_tip_1
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.7001
+				days = 180
+			}
+		}
+	}
+}
+#触发群情激愤（强制招募隐藏事件）强制招募隐藏事件一（分支一）
+news_event = {
+    id = DXQ_jiangling_event.5001
+    title = DXQ_jiangling_event.5001.a
+    desc = DXQ_jiangling_event.5001.b
+    picture = GFX_qunqingjifener
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.5001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development5001_tip
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.6001
+				days = 100
+			}
+		}
+	}
+}
+#触发群情激愤（强制招募隐藏事件）强制招募隐藏事件二（分支一）
+news_event = {
+    id = DXQ_jiangling_event.6001
+    title = DXQ_jiangling_event.6001.a
+    desc = DXQ_jiangling_event.6001.b
+    picture = GFX_qunqingjifensan
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.6001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development6001_tip
+		add_ideas = DXQ_jiangling_qunqingjifen
+	}
+}
+#触发民之所向（强制招募隐藏事件）强制招募隐藏事件一（分支二）
+news_event = {
+    id = DXQ_jiangling_event.7001
+    title = DXQ_jiangling_event.7001.a
+    desc = DXQ_jiangling_event.7001.b
+    picture = GFX_minzhisuoxiangyi
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.7001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development7001_tip
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.8001
+				days = 100
+			}
+		}
+	}
+}
+#触发民之所向（强制招募隐藏事件）强制招募隐藏事件二（分支二）
+news_event = {
+    id = DXQ_jiangling_event.8001
+    title = DXQ_jiangling_event.8001.a
+    desc = DXQ_jiangling_event.8001.b
+    picture = GFX_minzhisuoxianger
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_event.8001.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development8001_tip
+		add_ideas = DXQ_jiangling_minzhisuoxiang
+	}
+}
+#触发作弊
+#这段代码是为了和朋友联机时能稳定打爆他的头而写，所以不会在游戏内除这里外的任何地方明确表示有这玩意。
+#如果你发现了，那我建议这件事你不要说出去，免得我以后还得再改
+#至于触发条件，你都能找到这了我相信你也能自己找出来:)
+news_event = {
+    id = DXQ_jiangling_event.000
+    title = DXQ_jiangling_event.000.t
+    desc = DXQ_jiangling_event.000.d
+    picture = GFX_huihuihebao
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = { 
+	    name = DXQ_jiangling_event.000.b
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_event.000.tip
+		hidden_effect = {
+			set_technology = { DXQ_jiangling_yiyuan = 1 } 
+			add_ideas = DXQ_jiangling_zuobi_hidden_problem
+			remove_ideas = DXQ_jiangling_zuobi2 }
+		}
+}

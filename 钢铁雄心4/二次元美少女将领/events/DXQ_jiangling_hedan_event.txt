@@ -1,0 +1,32 @@
+add_namespace = DXQ_jiangling_hedan_event
+
+#战争中遭受核弹
+news_event = {
+    id = DXQ_jiangling_hedan_event.000
+    title = DXQ_jiangling_hedan_event.000.a
+    desc = DXQ_jiangling_hedan_event.000.b
+    picture = GFX_hedanhongzha
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_hedan_event.000.c
+		custom_effect_tooltip = DXQ_jiangling_hedan_development000_tip
+		add_ideas = DXQ_jiangling_hedan
+	}
+}
+#结束战争
+news_event = {
+#    id = DXQ_jiangling_hedan_event.001
+    title = DXQ_jiangling_hedan_event.001.a
+    desc = DXQ_jiangling_hedan_event.001.b
+    picture = GFX_hedanpingfu
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {  
+	    name = DXQ_jiangling_hedan_event.001.c
+		custom_effect_tooltip = DXQ_jiangling_hedan_development001_tip
+		remove_ideas = DXQ_jiangling_hedan
+	}
+}

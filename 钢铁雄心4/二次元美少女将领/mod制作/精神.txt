@@ -1,0 +1,265 @@
+民族精神idea
+#############
+政党翻译parties_l_english
+
+巡洋舰最高成本 production_cost_max_ship_hull_cruiser = 5300
+战列舰最高成本production_cost_max_ship_hull_heavy = 10000
+航母最高成本production_cost_max_ship_hull_carrier = 9500
+最大燃料 max_fuel_factor = -0.45
+燃料转换效率 fuel_gain_factor = -0.6
+
+改善关系效率 opinion_gain_monthly_factor = 0.1
+改善关系成本 improve_relations_maintain_cost_factor = 0.1
+新指挥官花费：military_leader_cost_factor = 50
+防御+1 army_leader_start_defense_level =1
+进攻+1 army_leader_start_attack_level =1
+后勤+1 army_leader_start_logistics_level =1
+计划+1 army_leader_start_planning_level =1
+每日消耗政治点数 political_power_cost = 0.2
+每日增长政治点数 political_power_factor = 0.2
+自制度autonomy_gain = 5
+
+
+加稳定度（精神）stability_factor = 0.10
+
+战争支持度（精神）war_support_factor = 0.5
+*防御战争稳定度修正defensive_war_stability_factor
+*进攻战争稳定度修正offensive_war_stability_factor
+每周稳定度加 stability_weekly
+每周战争支持 war_support_weekly
+每日民主democratic_drift = 0.1
+每日共产communism_drift = 0.1
+民主外交democratic_acceptance = 85
+制造战争目标时间justify_war_goal_time = -0.25
+加入阵营紧张度限制 join_faction_tension = 0.25
+制造战争目标紧张度限制 generate_wargoal_tension = -0.4
+补给 no_supply_grace = 48
+投降限制 surrender_limit = -0.5 
+生产效率增长 production_factory_efficiency_gain_factor
+最大生产力 production_factory_max_efficiency_factor = 0.2
+改装速度加成 equipment_conversion_speed
+海军船坞产出：industrial_capacity_dockyard = 0.5
+工厂产出 industrial_capacity_factory = 0.3 
+地区工业最大值 global_building_slots_factor = 2
+基础生产效率 production_factory_start_efficiency_factor = 0.2
+工厂轰炸受损性 industry_air_damage_factor = -0.2
+###研究时间：research_time_factor =####
+研究速度 research_speed_factor
+战斗人口conscription = 0.03
+装备夺取 equipment_capture = 0.03
+动员速度 mobilization_speed = 0.2
+适役人口修正：conscription_factor =
+月度人力 monthly_population =
+非核心人力non_core_manpower = 1
+出口 min_export
+可以创建派系：always = no
+建造速度 production_speed_buildings_factor= 0.10
+军工建设production_speed_arms_factory_factor = 0.1
+民工建设production_speed_industrial_complex_factor = 0.1
+基础设施建设production_speed_infrastructure_factor = 0.1
+油厂建设速度production_speed_synthetic_refinery_factor = 0.1
+船厂建设production_speed_dockyard_factor = 0.1
+空军基地建设production_speed_air_base_factor = 0.15
+海军基地建设production_speed_naval_base_factor = 0.15
+火箭基地建设production_speed_rocket_site_factor = 0.15
+雷达建设production_speed_radar_station_factor = 0.15
+核反应堆速度production_speed_nuclear_reactor_factor = 0.15
+民转军消耗 conversion_cost_civ_to_mil_factor= -0.2
+军转民消耗 conversion_cost_mil_to_civ_factor = -0.25 
+核反应堆 production_speed_nuclear_reactor_factor = 0.25
+
+陆上要塞 production_speed_bunker_factor = 0.3
+海岸要塞 production_speed_coastal_bunker_factor = 0.3
+防空炮 production_speed_anti_air_building_factor = 0.3	
+##########################################
+政治顾问 political_advisor_cost_factor = -0.25
+贸易法 trade_laws_cost_factor = -0.25
+征兵法 mobilization_laws_cost_factor = -0.25 
+经济 economy_cost_factor = -0.25
+总司令 high_command_cost_factor = -0.25
+空军司令 air_chief_cost_factor = -0.25
+陆军司令 army_chief_cost_factor = -0.25
+海军司令 navy_chief_cost_factor = -0.25
+#############################################################
+工厂修复速度 industry_repair_factor = 1
+免费维修 industry_free_repair_factor = 1
+消费品 consumer_goods_factor = 0.3
+两栖入侵：amphibious_invasion = 0.10
+增员率 land_reinforce_rate = 0.03
+计划速度 planning_speed = 0.5
+计划上限 max_planning = 0.4
+堑壕上限 max_dig_in = 4
+堑壕侦查 recon_factor_while_entrenched = 0.25
+堑壕速度 dig_in_speed_factor = 0.3
+核心领土攻击：army_core_attack_factor = 0.2
+核心领土防御：army_core_defence_factor = 0.2
+缺乏资源惩罚production_lack_of_resource_penalty_factor = -1
+资源获取效率local_resources_factor = 0.10
+陆军损耗 attrition = -0.1
+炎热损耗 heat_attrition_factor = -0.25
+寒冷损耗 winter_attrition_factor = -0.25
+当地补给能力 local_supplies = 0.3
+地形减免 terrain_penalty_reduction = 0.5
+补给消耗 supply_consumption_factor = -0.20
+全体单位攻击 army_attack_factor = 0.15
+全体单位防御 army_defence_factor = 0.15
+步兵攻击 army_infantry_attack_factor = 0.1
+步兵防御 army_infantry_defence_factor = 0.1
+炮兵攻击 army_artillery_attack_factor
+炮兵防御 army_artillery_defence_factor
+骑兵攻击 cavalry_attack_factor = 0.05
+骑兵防御 cavalry_defence_factor = 0.05 
+经验损失 experience_loss_factor = -0.1
+夜战 land_night_attack = 0.2
+陆军组织度：army_org_factor = 0.2 （百分比）
+陆军组织恢复速度 army_morale_factor =
+陆军组织度加：army_org（个）
+陆军速度 army_speed_factor = 0.3
+形态抵制力度 drift_defence_factor = 0.5
+外国颠覆效率 foreign_subversive_activites
+颠覆他国效率 subversive_activites_upkeep = -0.1
+我方游击部队影响 partisan_effect
+敌方林登万影响 enemy_partisan_effect
+#####志愿军####
+志愿军师上限 send_volunteer_size = 5
+派遣志愿军紧张度限制 send_volunteers_tension = -1
+可派遣师下限 send_volunteer_divisions_required = -1
+######################
+解密decryption_factor
+加密encryption_factor
+保独限制 guarantee_tension
+#######装甲###########
+装甲攻击army_armor_attack_factor= 0.15
+装甲防御army_armor_defence_factor= 0.15
+最大速度maximum_speed= 0.15
+坦克生产许可购买花费 license_armor_purchase_cost
+############################################
+部队训练时间 training_time_factor = 0.2
+颠覆活动代价 subversive_activites_upkeep = -0.5
+最大指挥点数提高 max_command_power = 200
+每日指挥点数增长 command_power_gain_mult = 1
+海陆空经验每日增长
+experience_gain_army = 1
+experience_gain_navy = 1
+experience_gain_air = 1
+#############海军大全######
+护航效率 convoy_escort_efficiency = 0.4
+撤退命令几率 naval_retreat_chance = 0.3
+撤退时军舰速度 naval_retreat_speed = 0.1
+最早参展舰船数目 ships_at_battle_start = 0.1
+发现概率 spotting_chance = 0.3
+海军对空攻击 navy_anti_air_attack_factor = 0.05
+航母舰载机空中瞄准 navy_carrier_air_targetting_factor = 0.2
+出击效率 sortie_efficiency = 0.2
+海军命中率 naval_hit_chance = 0.1
+舰队协同性 naval_coordination = 0.03
+袭击运输船效率 convoy_raiding_efficiency_factor = 0.5
+海军速度 naval_speed_factor = 0.2
+对潜探测 navy_submarine_detection_factor = 0.4
+海军最大航程 navy_max_range_factor = 0.1
+海军经验增长 experience_gain_navy_factor = 0.5
+####################
+###具体装备奖励 equipment_bonus = {
+###具体研究分流：research_bonus = {
+	工业奖励 industry = 0.10
+	电子奖励	electronics
+	和成资源 synth_resources = 0.1
+	陆军学说land_doctrine = 0.05
+	海军学说naval_doctrine = 0.05
+	空军学说air_doctrine = 0.05
+    	飞机武器air_equipment = 0.10
+	装甲武器armor = 0.10
+	军舰武器naval_equipment = 0.10
+}
+陆军经验增长 experience_gain_army_factor = 0.5
+######################
+武器代码
+装甲：armor
+#############
+战斗机：fighter_equipment 
+舰载战斗机：cv_fighter_equipment
+近距离支援机：CAS_equipment
+舰载近距离支援cv_CAS_equipment
+重型战斗机heavy_fighter_equipment
+战术轰炸tac_bomber_equipment
+战略轰炸机strat_bomber_equipment
+海军轰炸机nav_bomber_equipment
+舰载海军轰炸机cv_nav_bomber_equipment
+运输机transport_plane_equipment
+############
+装甲武器属性
+厚度 armor_value = 0.05 
+穿甲深度 ap_attack = 0.5
+硬攻击 hard_attack = 0.05
+软攻 soft_attack = 0.05
+最大速度 maximum_speed = 0.05 
+可靠性 reliability = 0.1
+###########
+潜艇船体 ship_hull_submarine
+轻型船体 ship_hull_light
+巡洋船体 ship_hull_cruiser
+战列船体 ship_hull_heavy
+航母船体 ship_hull_carrier
+
+
+
+###########
+空军武器属性
+#####
+机动性：air_agility = 0.1 
+最大速度：maximum_speed = 0.1
+对地攻击：air_ground_attack = 0.1 
+可靠性：reliability = 0.1
+战略轰炸：air_bombing = 0.1
+作战半径：air_range = 0.1 
+对海攻击：naval_strike_attack = 0.1
+####精神###
+空优army_bonus_air_superiority_factor = 0.1
+不良天气惩罚air_weather_penalty = -0.2
+空军经验增长experience_gain_air_factor = 0.1
+空军航程 air_range_factor = 0.2
+##############
+兵种属性
+轻型步兵 category_light_infantry
+步枪 infantry_equipment
+炮兵 artillery_brigade
+骑兵 cavalry
+摩托化 motorized
+机械化 mechanized
+牵引火炮 artillery_equipment
+改良火炮 artillery_equipment_2
+战间期火炮 interwar_artillery
+牵引式防空炮 anti_air_equipment_1
+改良防空炮 anti_air_equipment_2
+先进防空炮 anti_air_equipment_3
+反坦克炮 anti_tank_brigade
+火箭炮支援连 rocket_artillery
+
+
+装备制造花费 build_cost_ic
+装备奖励立即生效：instant = yes
+########
+针对巴西的进攻和防御
+targeted_modifier = {
+				tag = BRA 
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+买东西额外资源 extra_trade_to_target_factor = 1.0
+购买资源优惠 trade_cost_for_target_factor = -0.5			
+
+###人工智障###
+结盟    ai_get_ally_desire_factor
+呼叫盟友ai_call_ally_desire_factor = 50
+参展意愿ai_join_ally_desire_factor = 50
+战时生产ai_focus_war_production_factor= 0.5
+专注防御ai_focus_defense_factor = 0.5
+专注进攻ai_focus_aggressive_factor = 0.5
+专注先进军事研究ai_focus_military_advancements_factor = 0.5
+专注和平ai_focus_peaceful_factor = 0.5
+专注海军ai_focus_naval_factor = 0.5
+专注海军航空ai_focus_naval_air_factor = 0.5
+专注空军ai_focus_aviation_factor = 0.5
+专注军备ai_focus_military_equipment_factor = 1
+专注暴兵ai_desired_divisions_factor = 0.5
+允许购买倾向ai_license_acceptance = 50

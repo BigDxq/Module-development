@@ -1,0 +1,264 @@
+﻿作用                           解释                                                                                                     例子          
+white_peace                    Creates a white peace between countries 强制和平                                                       white_peace = ETH 
+unlock_national_focus          Unlocks a national focus for a country   解锁下一国策                                                  unlock_national_focus = focus_id 
+transfer_state                 Sets the owner and controller of a state   获得部分地区（无核心）                                      USA = { transfer_state = 353 } 
+swap_ideas                     Swaps two ideas, showing the difference                                                                swap_ideas = { remove_idea = REM_IDEA_ID add_idea = ADD_IDEA_ID } 
+state_event                    Fires a state event  触发事件                                                                          state_event = stateevent.1 
+start_civil_war                Starts a civil war with the given ideology   指定国家内战                                              start_civil_war = { ideology = fascism size = 0.5 } 
+sound_effect                   Plays a sound effect   音效                                                                            sound_effect = sound_effect_name 
+set_technology                 Set technology level of a country  设置科技                                                            set_technology = { suicide_craft = 1 } 
+set_state_owner                Sets the owner of a state   添加所有者                                                                 USA = { set_state_owner = 353 } 
+set_state_name                 Changes the name of a state   更改状态名称                                                             32 = { set_state_name = "Funland" } 
+set_state_flag                 Sets a state flag    设置状态标志                                                                      353 = { set_state_flag = test_flag } 
+set_state_controller           Sets the controller of a state                                                                         USA = { set_state_controller = 353 } 
+set_rule                       Sets a rule to a country   可以创建阵营                                                                set_rule = { can_create_factions = yes } 
+set_research_slots             Sets the number of research slots   获得研究槽个数                                                     set_research_slots = 4 
+set_province_name              Changes the name of a province     更改地名                                                            set_province_name = { id = 325 name = "Funville" } 
+set_province_controller        Set controller of a province    设置一个地块的所有者                                                   TAG = { set_province_controller = province_id }  
+set_politics                   Changes the politics of a country    变更执政党                                                        set_politics = { ruling_party = fascism elections_allowed = no } 
+set_political_power            Sets political power to a certain value   增加政治点数                                                 set_political_power = 100  
+set_political_party            Sets the properties of a political party   增加政党的支持率                                            add_popularity = { ideology = fascism popularity = 0.1 } 
+set_party_name                 Changes a party name of a country    改政党名字                                                        set_party_name = { ideology = democratic long_name = USA_republican_party name = USA_republican_party } 
+set_national_unity             Sets the national unity of a country  设置名族凝聚力                                                   set_national_unity = 0.80 
+set_major                      Makes a country a major     使一个国家成为主要国家                                                     set_major = yes 
+set_global_flag                Sets a global flag                                                                                     set_global_flag = spanish_civil_war 
+set_equipment_fraction         Gives a fraction of your equipment to another country  赠送装备科技                                    set_equipment_fraction = 0.35 
+set_demilitarized_zone         Sets a state as a demilitarized zone   将某一块地设置为非军事地区                                      any_owned_state = { set_demilitarized_zone = yes } 
+set_country_leader_ideology    Changes the ideology of the current country leader  改变执政领导的思潮                                 Needs to be tested 测试
+set_country_flag               Sets a country flag   变更国旗                                                                         set_country_flag = anschluss 
+set_cosmetic_tag               Sets a cosmetic TAG for a country   设置标签                                                           set_cosmetic_tag = SAF_SOV_communism 
+set_capital                    Moves capital to specified state    变更首都                                                           set_capital = 345 
+set_building_level             Sets specific level of a building construction for amount of levels in specified state or province     69 = { set_building_level = { type = bunker level = 3 province = { all_provinces = yes limit_to_border = yes level < 3 } } 
+                               增加建筑
+set_border_war                 Starts a border war  开始边界战争                                                                      605 = { set_border_war = yes } 
+set_autonomy                   Sets the autonomy level of a target   设置附庸的自治级别                                               set_autonomy = { target = RAJ autonomy_state = autonomy_free } 
+send_equipment                 Sends equipment to a country      赠送装备                                                             send_equipment = { target = FIN type = infantry_equipment amount = 500 } 
+save_global_event_target_as    Save a global event target as something     宣战                                                       save_global_event_target_as = war_target 
+save_event_target_as           Save an event target as something      同上                                                            save_event_target_as = war_target 
+reverse_add_opinion_modifier   Add opinion modifiers to target                                                                        reverse_add_opinion_modifier = { target = BUL modifier = GER_treaty_of_craiova_other } 
+retire_country_leader          Removes a country leader and replaces him with another candidate from the same party                   retire_country_leader = yes 
+                                变更国家领导人
+reset_state_name               Resets state name to original   将地块设置为原始状态                                                   32 = { reset_state_name = yes } 
+reset_province_name            Resets province name to original  重置省份名字                                                         reset_province_name = 325 
+remove_unit_leader_trait       Removes a trait from a unit leader  删除领导特性                                                       Needs to be tested 测试
+remove_unit_leader             Removes a unit leader    删除一个领导                                                                  remove_unit_leader = leader_id 
+remove_state_core              Removes cores from a state   删除地块核心                                                              remove_state_core = 345 
+remove_state_claim             Removes claims on a state     删除地块宣称                                                             remove_state_claim = 363 
+remove_relation_modifier       Removes a static modifier between current scope and target                                             remove_relation_modifier = ROM_military_modernization 
+remove_opinion_modifier        Removes an opinion modifer from a country                                                              remove_opinion_modifier = { target = ENG modifier = tizard_refused } 
+remove_ideas_with_trait        Removes ideas with specific traits    删除内阁                                                         remove_ideas_with_trait = motorized_equipment_manufacturer 
+remove_ideas                   Removes idea(s) from a country    删除国家精神                                                         remove_ideas = ENG_king_edward 
+remove_from_tech_sharing_group Removes a country from a tech sharing group  从技术分享中删除一个国家                                  remove_from_tech_sharing_group = tizard_mission 
+remove_from_faction            Removes a country from a faction   将国家从阵营中踢出                                                  remove_from_faction= ITA 
+remove_country_leader_trait    Removes a trait from the current country leader  删除当前国家领导人的特点                              remove_country_leader_trait = stout_defender 
+remove_core_of                 Removes cores of a country from a state  移除一个省的拥有国家的核心                                    any_owned_state = { remove_core_of = SOV }  
+remove_claim_by                Removes state claim from a country                                                                     any_owned_state = { remove_claim_by = SOV } 
+remove_building                Removes a specified building from a specified state or province 删除指定位置的建筑                     219 = { remove_building = { type = arms_factory level = 5 } } 
+release_puppet                 Releases a specified country   释放傀儡国家                                                            release_puppet = LIB 
+release                        Releases a specified country    释放占领的国家                                                         release = CRO 
+randomize_weather              Randomizes weather                                                                                     Needs to be tested 测试
+random_list                    Chooses an effect randomly from a list based on their probabilities  随机结果                          random_list = { 70 = { add_political_power = 200 } 30 = { add_political_power = -100 } } 
+random                         Random effect with a probability     随机结果具有效率                                                  random = { 50 = { add_political_power = 50 } } 
+puppet                         Puppets the specified country   傀儡国家                                                               puppet = LIB 
+news_event                     Triggers a news event   触发新闻事件                                                                   news_event = news_event.251 
+navy_experience                Adds navy experience  增加海军经验                                                                     navy_experience = 10 
+load_oob                       Loads an OOB file 增加OB文件                                                                           load_oob = SOV_reinforcements 
+kill_country_leader            Removes a country leader completely   杀死国家领导人                                                   kill_country_leader = yes 
+hold_election                  Holds elections     举行选举                                                                           hold_election = TAG 
+goto_state                     Goes to specified state                                                                                goto_state = 150 
+goto_province                  Goes to specified province                                                                             goto_province = 11302                
+give_military_access           Specified country gives military access (bugged tooltip)  军事通行权                                   give_military_access = GER 
+give_guarantee                 Guarantees specified country   保障国家                                                                give_guarantee = POL 
+end_puppet                     Ends puppetry over the specified country    结束对国家的傀儡                                           end_puppet = CRO 
+drop_cosmetic_tag              Removes a cosmetic TAG for a country                                                                   drop_cosmetic_tag = yes 
+division_template              Adds a division template to a country   增加军队模块                                                   division_template = { name = "Cool Name" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 1 y = 0 } } } 
+dismantle_faction              Dismantles the faction led by the current country   去除目前领导人的派系                               dismantle_faction = yes 
+diplomatic_relation            Set up diplomatic relations between two countries   建立外交关系                                       diplomatic_relation = { country = SOV relation = non_aggression_pact } 
+declare_war_on                 Declares war on a specified country   对指定国宣战                                                     declare_war_on = { target = POL type = annex_everything } 
+damage_building                Damages a building in state                                                                            damage_building = { type = industrial_complex damage = 0.6 } 
+create_wargoal                 Creates a wargoal   创建吞并目标                                                                       create_wargoal = { type = annex_everything target = EST } 
+create_unit                    Creates a new unit     增加一个新的军队                                                                create_unit = { division = "name = COOL_NAME division_template = COOL_TEMPLATE starting_experience_factor = 1.0" } 
+create_production_license      Creates production license  生产许可                                                                   create_production_license = { target = HUN cost_factor = 1.0 equipment = { type = light_tank_equipment_2 version = 0 } 
+create_navy_leader             Creates a naval leader for a country   创建一个海军领导人                                              create_navy_leader = { name = "Boaty McBoatface" gfx = "GFX_BoatfacesFace" traits = { } skill = 3 } 
+create_import                  Creates trade between countries  创建国家之间的交易                                                    create_import = { resource = steel amount = 20 exporter = SWE } 
+create_field_marshal           Creates a field marshal  创建一个元帅                                                                  create_field_marshal = { name = "Dude McCoolDude" gfx = "GFX_CoolDudesFace" traits = { } skill = 3 } 
+create_faction                 Creates a faction with a specified name  创建一个指定名称的派系                                        create_faction = "french_entente_alliance"   
+create_equipment_variant       Creates a new equipment variant  创建新的装备变体                                                      create_equipment_variant = { name = "Montecuccoli Class" type = light_cruiser_1 upgrades = { ship_reliability_upgrade = 3 ship_engine_upgrade = 3 ship_gun_upgrade = 3 ship_anti_air_upgrade = 3 }} 
+create_country_leader          Creates a country leader (head of state)  创建国家元首                                                 create_country_leader = { name = "Peter II" desc = "POLITICS_PETER_II_DESC" picture = "Portrait_Yugoslavia_Peter_II.dds" expire = "1965.1.1" ideology = despotism traits = { } } 
+create_corps_commander         Creates a corps commander  创建一个军团指挥官                                                          create_corps_commander = { name = "Dude McCoolDude" gfx = "GFX_CoolDudesFace" traits = { } skill = 3 } 
+country_event                  Fires an event 触发事件                                                                                country_event = { days = 1 id = france.1 } 
+complete_national_focus        Completes a national focus   完成国家重点                                                              complete_national_focus = focus_id 
+clr_state_flag                 Removes a state flag                                                                                   353 = { clr_state_flag = test_flag } 
+clr_global_flag                Removes a global flag                                                                                  clr_global_flag = spanish_civil_war 
+clr_country_flag               Removes a country flag                                                                                 clr_country_flag = anschluss    
+clear_global_event_targets     Removes all global event targets                                                                       clear_global_event_targets = war_target 
+clear_global_event_target      Removes a global event target                                                                          clear_global_event_target = war_target 
+change_tag_from                Changes player to other country 将玩家改为其他国家                                                     change_tag_from = GER 
+break                          Break execution of effects                                                                             Needs to be tested  
+army_experience                Adds army experience   经验+10                                                                         army_experience = 10 
+annex_country                  Annexes a specified country 吞并指定国家                                                               annex_country = { target = EST } 
+air_experience                 Adds air experience                                                                                    air_experience = 10 
+add_unit_leader_trait          Add a trait to a unit leader                                                                           Needs to be tested 测试
+add_to_war                     Adds country to a war  与国家进入战争                                                                  add_to_war = { targeted_alliance = CHI enemy = JAP } 
+add_to_tech_sharing_group      Adds a country to a tech sharing group 将一个国家添加到技术分享                                        add_to_tech_sharing_group = tizard_mission  
+add_to_faction                 Adds a country to a faction  使国家加入阵营                                                            add_to_faction = ITA 
+add_timed_idea                 Adds a time limited idea to a country   添加一个花费时间的想法                                         add_timed_idea = { idea = idea_id days = 50 } 
+add_threat                     Adds country threat                                                                                    Needs to be tested 测试
+add_tech_bonus                 Adds a limited tech bonus   科技加速                                                                   add_tech_bonus = { bonus = 0.5 uses = 2 category = radar_tech } 
+add_state_core                 Adds cores on a specified state  给指定的地块添加核心                                                  add_state_core = 345 
+add_state_claim                Add claims on a state    添加状态声明                                                                  add_state_claim = 363 
+add_scaled_political_power     Adds political power scaled by the difference between ICs of receiver and another country              Needs to be tested 
+add_resource                   Adds resource production to a state 增加地块资源                                                       add_resource = { type = oil amount = 8 state = 662 } 
+add_research_slot              Adds set number of research slots   添加科研槽                                                         add_research_slot = 2 
+add_relation_modifier          Adds a static modifier between current scope and target                                                add_relation_modifier = { target = GER modifier = ROM_military_modernization } 
+add_popularity                 Adds popularity to an ideology  增加政党支持率                                                         add_popularity = { ideology = fascism popularity = 0.1 } 
+add_political_power            Adds political power to a country  增加政治权利                                                        add_political_power = 50 
+add_opinion_modifier           Adds an opinion modifier to a country                                                                  add_opinion_modifier = { target = ENG modifier = tizard_refused } 
+add_national_unity             Adds national unity  增加民族凝聚力                                                                    add_national_unity = 0.02 
+add_named_threat               Adds country threat  增加国家威胁                                                                      add_named_threat = { threat = 2 name = germany.4.t } 
+add_manpower                   Adds manpower to a state or country   向地区增加人口                                                   add_manpower = 8000  
+add_ideas                      Adds idea(s) to a country  增加民族精神                                                                add_ideas = ENG_king_edward 
+add_extra_state_shared_building_slots            Add extra building slots to a state  增加建筑槽                                      random_owned_state = { add_extra_state_shared_building_slots = 2 } 
+add_equipment_to_stockpile     Adds equipment to stockpile of the country in question   增加设备库存                                  add_equipment_to_stockpile = { type = convoy_1 amount = 50 producer = <TAG> } 
+add_equipment_production       Add equipment production   增加装备生产                                                                add_equipment_production = { equipment = { type = light_cruiser_1 creator = "ITA" version_name = "Montecuccoli Class" } requested_factories = 1 progress = 0.95 amount = 1 } 
+add_country_leader_trait       Add a trait to the current country leader  为当前国家领导人添加一个特性                                add_country_leader_trait = warmonger 
+add_core_of                    Adds cores of a country to a state   将国家添加到核心                                                  any_owned_state = { add_core_of = SOV } 
+add_claim_by                   Add state claim by a country   添加一个国家的宣称                                                      any_owned_state = { add_claim_by = SOV } 
+add_building_construction      Starts a building construction within a state or a province   在省内开展建筑工作                       18 = { add_building_construction = { type = bunker province = 5291 level = 2 instant_build = yes } } 
+add_autonomy_ratio             Adds autonomy (with custom name)  添加自主权{使用自定义名称}                                           add_autonomy_ratio = { value = 0.1 localization = LOC_STRING_HERE } 
+add_ace                        Adds an air ace     添加空军王牌                                                                       add_ace = { name = "Amelia" surname = "Earhart" callsign = "Revenant" type = fighter_genius is_female = yes } 
+fascism_drift = 0.10
+
+
+########################################################
+
+获得精神民族主义
+add_ideas = nationalism
+获得共产
+add_ideas = internationalism
+获得民主
+add_ideas = democratic_influence
+
+共产communism
+法西斯fascism
+中立neutrality
+获得民主主义
+add_ideas = democratic_influence
+世界紧张度要求
+threat > 0.1
+自治度要求 
+compare_autonomy_progress_ratio > 0.55
+装备数量要求
+has_equipment = {
+				infantry_equipment > 199
+			}
+投降倾向高于70 surrender_progress > 0.7
+兵力要求
+has_army_manpower = {
+							size > 399999
+						}
+
+前提无阵营 is_in_faction = no
+工业大于50 num_of_factories > 50
+德国在同一阵营is_in_faction_with = GER
+前提是民主执政
+has_government = democratic
+前提USA存在 country_exists = USA
+前提控制地区737 = {is_controlled_by = CAN }
+自定义文本 custom_effect_tooltip
+精神变更
+swap_ideas = {remove_idea = fanshengbei add_idea = fanshengbei2 }
+前提和英国开战has_war_with = ENG	
+前提国家存在country_exists = YUG				}
+加个排斥
+mutually_exclusive = { focus =   }
+前提：到1940、年处于和平、不是ai之后可点
+available = {
+	date > 1940.1.1
+           has_war = no
+           is_ai = no
+		}
+
+部队经验+5
+army_experience = 5
+前提独立is_subject = no
+前提美国是加拿大的傀儡USA = {	is_subject_of = CAN	}
+前提与美国关系好
+USA_will_support = yes
+政治点数
+add_political_power = 100
+
+前提拥有精神 has_idea = XXX
+
+xx国触发事件
+xx国 = {  country_event = { id = 事件id }  }
+增加紧张度
+add_named_threat = { threat = 2 name = 国家id_demand_memel_threat }
+更换政党
+set_politics = {ruling_party = 政党 elections_allowed = no
+			}
+修改共同研究变量
+modify_tech_sharing_bonus = {
+ id = commonwealth_research （英联邦）
+ bonus = 0.03
+	}
+增加自治度
+add_autonomy_ratio = {
+	     value = 0.15
+	    }
+
+如果波兰控制207，则207转移到我们名下
+		if = {
+			limit = { 
+				POL = { 
+					owns_state = 207
+					controls_state = 207
+				}
+			}
+			transfer_state = 207
+		}
+
+
+
+
+便宜内阁
+random = no
+		political_advisor_cost_factor = -0.25
+		trade_laws_cost_factor = -0.25
+		mobilization_laws_cost_factor = -0.25
+		economy_cost_factor = -0.25
+		high_command_cost_factor = -0.25
+		air_chief_cost_factor = -0.25
+		army_chief_cost_factor = -0.25
+		navy_chief_cost_factor = -0.25
+custom_effect_tooltip = 介绍
+国策ai倾向
+ai_will_do = {
+			factor = 5
+		}
+
+ai宣称303={add_claim_by = chi}
+送装备 send_equipment = { target = ENG type = fighter_equipment amount = 100 }
+获得评价add_opinion_modifier = { target = USA modifier = shy_usa_love }
+触发事件  country_event = { days = 1 id =  tfv_canada.275 }
+隐藏效果 hidden_effect = {  }
+加人力 add_manpower = 10000
+获得时限的buff
+add_timed_idea = {
+				idea = SHY_109
+				days = 365
+			}
+全体指挥官防御、进攻、计划、后勤+1
+every_army_leader = {
+			add_defense = 1
+			add_attack = 1
+                        add_planning = 1
+                        add_logistics = 1
+
+		}
+
+
+##################本地化事件#########
+来源国首脑 [From.GetLeader]
+来源国政党 [From.GetCommunistParty]
+来源国家名称 [From.GetName]

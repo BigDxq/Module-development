@@ -1,0 +1,384 @@
+原始标签 original_tag = 
+获得精神民族主义
+add_ideas = nationalismlim
+获得共产
+add_ideas = internationalism
+获得民主
+add_ideas = democratic_influence
+变更国家标签 set_cosmetic_tag =
+加稳定度 add_stability = 0.1
+设置稳定度 set_stability = 0.2
+加战争支持度 add_war_support = 0.1
+设置战争支持度 set_war_support = 0.2
+共产 communism
+法西斯 fascism
+中立 neutrality
+获得民主主义
+add_ideas = democratic_influence
+世界紧张度要求
+threat > 0.1
+前提国家引发紧张度has_added_tension_amount > 10
+移除工厂remove_building = { type = 【建筑种类】 level = 【减多少】}
+领土接壤 is_owner_neighbor_of = MAN
+领土靠海 is_coastal = yes
+领土首都相连 is_in_home_area = yes
+稳定性要求 
+has_stability > 0.85
+战争支持度要求
+has_war_support > 0.85
+投降倾向要求
+surrender_progress > 0.25
+自治度要求 
+compare_autonomy_progress_ratio > 0.55
+比较自治状态
+compare_autonomy_state > autonomy_dominion
+装备数量要求
+has_equipment = {
+				infantry_equipment > 199
+			}
+设置首都 set_capital =
+是首都 is_capital = yes
+国家领导人要求 has_country_leader = { ruling_only = yes name = "蕾姆" }
+投降倾向高于70 surrender_progress > 0.7
+陆军经验要求 has_army_experience
+伤亡要求 casualties > 100000
+兵力要求
+has_army_manpower = {
+	size > 399999
+	}
+￥￥现役船只要求￥￥
+has_navy_size = {
+    size > 10
+    archetype= ？？？
+}
+#battleship 战列舰
+#carrier 航空母舰
+#heavy_cruiser 重型巡洋舰
+#light_cruiser 轻巡
+#Submarine 潜艇
+#Destroyer 驱逐 
+
+前提无阵营 is_in_faction = no
+工业大于50 num_of_factories > 50
+德国在同一阵营 is_in_faction_with = GER
+
+阵营领袖 is_faction_leader = yes
+退出当前阵营 leave_faction = yes
+中国加入日本阵营
+JAP = { add_to_faction = GXC }
+前提是民主执政
+has_government = democratic
+前提评价大于25 has_opinion = { target = PREV value > 26 }
+前提控制地区 controls_state = 523
+地区控制者为 is_fully_controlled_by = RYU
+前提合法拥有 owns_state = 523
+获得地区（无核心）transfer_state = 353
+傀儡国家 puppet = LIB
+吞并国家 HUN = { annex_country = { target = AUS transfer_troops = yes } }
+全体指挥官加入 every_unit_leader = { set_nationality = HUN }
+XX国资源授权 give_resource_rights = { receiver = ENG state = 476 }
+删除资源授权 ENG = { remove_resource_rights = 476 }
+####################核心################
+添加地区加核心 add_state_core = 634
+添加国家加核心 add_core_of = NZL
+移除地区核心 remove_state_core = 634 #（删除核心要用这个）
+
+去除一个国家的核心 remove_core_of = NZL
+给予羽国军通give_military_access = SHY
+@精神变更
+swap_ideas = {remove_idea = fanshengbei add_idea = fanshengbei2 }
+不许删除此精神allowed_to_remove = { always = no }
+前提和英国开战 has_war_with = ENG	
+前提不是主要国家 is_major = no
+前提国家存在 country_exists = YUG	/ exists = yes
+国家已投降 has_capitulated = yes
+前提独立 is_subject = no
+前提完成某国策 has_completed_focus
+前提：到1940、年处于和平、不是ai之后可点
+有内战 has_civil_war = yes
+available = {
+	date > 1940.1.1
+           has_war = no
+           is_ai = no
+		}
+其他国家是德国盟友并控制伦敦
+any_other_country = {is_in_faction_with=GER controls_state=126 }
+
+部队经验+5
+army_experience = 5
+前提美国是加拿大的傀儡 USA = { is_subject_of = CAN	}
+解放古巴为独立国
+set_autonomy = { target = CUB autonomy_state = autonomy_free }
+释放国家 release = GER
+前提与美国关系好
+USA_will_support = yes
+加政治点数
+add_political_power = 100
+政治要求 has_political_power > 100
+
+前提拥有精神 has_idea = XXX
+随机触发效果 random_list={ 50={} }
+xx国触发事件
+xx国 = { country_event =  }
+增加紧张度
+add_named_threat = { threat = 2 name = 国家id_demand_memel_threat }
+政党支持率
+add_popularity = { ideology = fascism popularity = 0.1 }
+更换政党
+set_politics = {ruling_party = 政党 elections_allowed = no }
+修改共同研究变量
+modify_tech_sharing_bonus = {
+ id = commonwealth_research （英联邦）
+ bonus = 0.03
+	}
+增加自治度
+add_autonomy_ratio = {
+	     value = 0.15
+	    }
+
+如果波兰控制207，则207转移到我们名下
+		if = {
+			limit = { 
+				POL = { 
+					owns_state = 207
+					controls_state = 207
+				}
+			}
+			transfer_state = 207
+		}
+
+
+
+
+便宜内阁
+random = no
+		政治political_advisor_cost_factor = -0.25
+		贸易trade_laws_cost_factor = -0.25
+		征兵法mobilization_laws_cost_factor = -0.25
+		经济economy_cost_factor = -0.25
+		总司令high_command_cost_factor = -0.25
+		空军司令air_chief_cost_factor = -0.25
+		陆军司令army_chief_cost_factor = -0.25
+		海军司令navy_chief_cost_factor = -0.25
+custom_effect_tooltip = 介绍
+国策ai倾向
+ai_will_do = {
+			factor = 5
+		}
+
+领土要求303={add_claim_by = chi}
+获得宣称add_state_claim = 19
+送装备 send_equipment = { target = ENG type = fighter_equipment amount = 100 }
+#优先送旧式 old_prioritised = yes
+#优先新式 new_prioritised = yes
+获得评价 add_opinion_modifier = { target = USA modifier = CCY_didui}
+失去评价 remove_opinion_modifier = {
+评价要求 has_opinion = { target = CCY value > 50 }
+触发事件  country_event = { days = 1 id = usa.275 }
+立即效果 immediate = {}
+平均发生时间 mean_time_to_happen = { days = 320 }
+隐藏效果 hidden_effect = {  }
+（预知效果）工具提示 effect_tooltip = {}
+自定义文本 custom_effect_tooltip = XXX
+########杂项######
+黄色文本§Y文本§!
+红色文本§R文本§!
+绿色文本§G文本§!
+战争警告 will_lead_to_war_with = SOV
+白色和平 white_peace = {
+			tag = GER
+			message = EXAMPLE
+		}
+自定义前置条件 custom_trigger_tooltip = {tooltip =  XX }
+加人力 add_manpower = 10000
+获得时限的buff
+			add_timed_idea = {
+				idea = SHY_109
+				days = 365
+			}
+保障独立give_guarantee = 
+全体指挥官防御、进攻、计划、后勤+1
+every_army_leader = {
+			add_defense = 1
+			add_attack = 1
+                        add_planning = 1
+                        add_logistics = 1
+
+		}
+可能性if = {
+		   limit = {}
+	}
+不继续检测 else_if
+备用条件 else
+@@@@@@@@@@@@@@@@@
+被检测 PREV  @
+来源国 FROM     @
+本国 ROOT       @
+@@@@@@@@@@@@@@@@@
+添加模板 division_template = {
+				name = "农民起义军"
+				priority = 1
+				is_locked = yes #锁定
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+				}
+			}
+部署模板军队 random_owned_controlled_state = {
+				limit = { ROOT = { has_full_control_of_state = PREV } }
+				prioritize = { 752 }
+				
+				create_unit = {
+					division = "name = \"XXXX\" division_template = \"农民起义军\" start_experience_factor = 0.5" 
+					owner = PRC
+				}
+			}				
+拥有模板 has_template = "农民起义军"
+删除模板 delete_unit_template_and_units = {
+				division_template = "农民起义军"
+			}
+
+获得军队 load_oob = FRA_junjian
+火星民工add_offsite_building = { type = industrial_complex level = 2 }
+添加装备库存 add_equipment_to_stockpile = {type = infantry_equipment_1 amount = 100000 producer = RAJ }
+掌握科技 has_tech = excavation3	
+添加科技 set_technology = {gwtank = 1}
+#挖掘技术3 excavation3	
+#建筑技术3 construction3
+加入共享科研 add_to_tech_sharing_group
+科研槽add_research_slot = 1
+科研槽要求 amount_research_slots  >3
+ai紧张度倾向 threat
+领导人退休 retire_country_leader = yes 
+香港控制国是自己人
+527 = { CONTROLLER = {	OR = {tag = JAP is_subject_of = JAP } } }
+正在进攻中国 has_offensive_war_with = CHI
+处于战争进攻方 has_offensive_war = yes 
+处于战争防守方has_defensive_war = yes 
+与英国一同作战 has_war_together_with = ENG
+创建傀儡目标
+create_wargoal = {
+    type = puppet_wargoal_focus
+    target = ROOT
+}
+#征服type = take_state_focus
+#吞并type = annex_everything
+#收复核心 = take_core_state
+#颠覆政权 = topple_government
+##################本地化事件#########
+来源国首脑 [From.GetLeader]
+来源国政党 [From.GetRulingParty]
+来源国名 [From.GetName]
+来源国首都[From.Capital.GetName]
+来源国阵营 [Root.GetFactionName]
+收信国家名称[Root.GetName]
+
+（决议）目标国家名字 [From.GetNameDef]
+（决议）我们国家名字 [Root.GetAdjective]
+形容词 [From.GetAdjective]
+######标签######
+
+添加全球标签 set_global_flag
+拥有全球标签 has_global_flag
+清除全球标签 clr_global_flag
+
+改变国家标签 set_cosmetic_tag = ALY_CAN
+需求国家标签 has_country_flag
+添加国家标签 set_country_flag
+添加时限标签 set_country_flag = { flag = JAP_zaochuan_cd value = 1 days = 150 }
+清除国家标签 clr_country_flag
+
+地区标签set_state_flag = 
+#################################
+获得领导人标签 set_unit_leader_flag
+需求领导人标签 has_unit_leader_flag
+#需求领导人ID any_unit_leader
+去除一个将领 remove_unit_leader
+
+
+任意一个地区 any_state = {}
+任意拥有的地区 any_owned_state = {}
+任意一个国家 any_country = {}
+所有的国家（效果） every_country = {}
+随机国家（满足条件，产生效果）
+random_other_country = {
+ original_tag = JAP
+ has_government = democratic
+ }
+
+（效果）每个地区 every_state = {}#双前置需要AND，不然满足任何前置都会生效
+（前置）所有地区 all_state = {}
+是加拿大的核心 is_core_of = CAN
+互不侵犯条约
+effect_tooltip = {
+			diplomatic_relation = {
+				country = FROM
+				relation = non_aggression_pact
+				active = yes
+			}
+		}
+创建阵营 create_faction = MY_FACTION_NAME
+###规则###
+set_rule = {
+
+}
+
+自杀攻击 can_use_kamikaze_pilots = yes
+创建阵营 can_create_factions = yes
+#####脚本#####
+加预算 AST_jingfeiyusuan_level_up 
+减少预算 AST_jingfeiyusuan_level_down 
+清除预算 AST_jingfeiyusuan_clear_all
+#####调整建筑资源######
+modify_building_resources = {
+        	   building = synthetic_refinery
+        	   resource = rubber
+        	   amount = 2
+        	}
+变领导人
+create_country_leader = {
+			name = "格奥尔吉·朱可夫"
+			desc = "POLITICS_HERMANN_GORING_DESC"
+			picture = "ak47.dds"
+			expire = "1965.1.1"
+			ideology = stalinism
+			traits = {
+			}
+		}
+		####AI倾向修饰###
+modifier = {
+					factor = 2
+					
+				}
+日期大于 date > 1940.1.1
+历史国策 = is_historical_focus_on = yes
+####临时调整AI策略###
+add_ai_strategy = {
+	type = befriend
+	id = "GER"			
+	value = 200
+}
+befriend 交朋友
+alliance 联盟
+send_volunteers_desire 派遣志愿军
+ignore 忽视
+support 物资支持
+antagonize 对抗
+###获得科技许可###
+create_production_license = {
+    target = HUN
+    equipment = {
+        type = fighter_equipment_1
+    }
+    cost_factor = 0
+}
+
+

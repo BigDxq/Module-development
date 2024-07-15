@@ -1,0 +1,82 @@
+add_namespace = DXQ_jiangling_jiandie_event
+
+#间谍招募功能分类
+country_event = {
+    id = DXQ_jiangling_jiandie_event.001
+    title = DXQ_jiangling_jiandie_event.001.t
+    desc = DXQ_jiangling_jiandie_event.001.d
+    picture = GFX_qianshuyexi
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+        name = DXQ_jiangling_jiandie_event.001.a
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_jiandie_Development_dec_tip_1
+		consumer_goods_factor = 0.03
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_jiandie_event.100
+				days = 90
+			}
+		}
+	}
+	option = {
+        name = DXQ_jiangling_jiandie_event.001.b
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_jiandie_Development_dec_tip_2
+		consumer_goods_factor = 0.01
+	}
+}
+#############################################
+#招募千束,泷奈
+#############################################
+news_event = {
+    id = DXQ_jiangling_jiandie_event.100
+    title = DXQ_jiangling_jiandie_event.100.a
+    desc = DXQ_jiangling_jiandie_event.100.b
+    picture = GFX_qianshuzhaomu
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_jiandie_event.100.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_jiandie_development100_tip
+		add_ideas = DXQ_jiangling_jiandie_zhaomu
+			create_operative_leader = {
+				name = "锦木千束"
+				GFX = GFX_jiandie_qianshu
+				skill = 3
+				traits = { operative_commando operative_infiltrator operative_well_groomed } 
+				bypass_recruitment = yes
+				nationalities = { ROOT JAP}
+			}
+			create_operative_leader = {
+				name = "井上泷奈"
+				GFX = GFX_jiandie_longnai
+				skill = 2
+				traits = { operative_commando operative_infiltrator operative_well_groomed } 
+				bypass_recruitment = yes
+				nationalities = { ROOT JAP }
+			}
+	}
+}
+#############################################
+#千束，泷奈入狱
+#############################################
+news_event = {
+    id = DXQ_jiangling_jiandie_event.200
+    title = DXQ_jiangling_jiandie_event.200.a
+    desc = DXQ_jiangling_jiandie_event.200.b
+    picture = GFX_qianshuruyu
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_jiandie_event.200.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_jiandie_development200_tip
+		hidden_effect = {
+		}
+	}
+}

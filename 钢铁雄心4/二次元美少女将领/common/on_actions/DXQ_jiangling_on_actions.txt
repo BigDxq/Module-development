@@ -1,0 +1,66 @@
+on_actions = {
+	on_army_leader_promoted = { 
+		effect = { 
+			if = {
+				limit = { 
+					date > 1937.01.04
+					date < 1937.01.05
+				}
+				hidden_effect = {
+					from = {	
+						news_event = { 
+							id = DXQ_jiangling_event.000
+						}
+					}
+				}
+			}
+		}
+	}
+	on_army_leader_promoted = {
+		effect = { 
+			if = {
+				limit = { 
+					has_ideas = {
+						id = DXQ_jiangling_zuobi_hidden_problem
+					}
+				}
+				hidden_effect = {
+					from = {	
+						remove_ideas = DXQ_jiangling_zuobi_hidden_problem
+					}
+				}
+			}
+		}
+	}
+#	on_nuke_drop = {
+#		effect = {
+#			if = {
+#				limit = { 
+#					NOT = { 
+#						has_idea = DXQ_jiangling_hedan 
+#					}
+#					FROM = {
+#						news_event = { id = DXQ_jiangling_hedan_event.000 }
+#					}
+#				}
+#			}
+#		}
+#	}
+#	on_weekly = {
+#		effect = {
+#			 if = {
+#				limit = {
+#					not = { has_war = yes }
+#					root = {
+#						has_ideas = {
+#							id = DXQ_jiangling_hedan
+#						}
+#					}
+#				}	
+#				news_event = { 
+#					id = DXQ_jiangling_hedan_event.001
+#				}
+#			}
+#		}
+#	}
+}

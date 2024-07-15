@@ -1,0 +1,195 @@
+民族精神语句总结
+稳定度修改
+stability_factor = -0.1
+战争支持度修改
+war_support_factor = -0.3
+政治点数消耗
+political_power_cost = 0.05
+政治点数增加/减少
+political_power_gain = -0.15
+适役人口
+conscription = -0.0075
+适役人口修正
+conscription_factor = -0.25
+非核心人力调整
+non_core_manpower = 0.08
+海军船坞
+production_speed_dockyard_factor = 0.25
+海军基地
+production_speed_naval_base_factor = 0.25
+海上要塞
+production_speed_coastal_bunker_factor = 0.25
+陆上要塞
+production_speed_bunker_factor = 0.25
+空军基地
+production_speed_air_base_factor = 0.25
+防空炮阵
+production_speed_anti_air_building_factor = 0.25
+雷达站
+production_speed_radar_station_factor = 0.25
+储油罐
+production_speed_fuel_silo_factor = 0.25
+化学合成厂
+production_speed_synthetic_refinery_factor = 0.15
+陆军，陆战学说研究速度修改
+land_doctrine = -0.75
+海军，海战学说研究速度修改
+naval_doctrine = -0.75
+空军学说研究速度修改
+air_doctrine = -0.7
+陆军修正
+army_morale_factor = -0.2
+陆军组织度修改
+army_org_Factor = -0.05
+投降界限
+surrender_limit = 0.10
+步兵单位攻击
+army_infantry_attack_factor = 0.03
+正当化理由时间
+justify_war_goal_time = 0.20
+核心领土防御
+army_core_defence_factor = 0.05
+核心领土攻击
+army_core_attack_factor = 0.05
+计划速度修正
+planning_speed = -0.5
+生活消费品修正
+consumer_goods_factor = 0.40
+建造速度修正
+production_speed_buildings_factor = -0.25
+生产效率上限修正
+production_factory_max_efficiency_factor = -0.15
+工厂产出修正
+industrial_capacity_factory = -0.35
+每周战争支持度修正
+war_support_weekly = -0.01
+每周稳定度修正
+stability_weekly = -0.01
+对特定国家贸易修正
+targeted_modifier = {
+tag = USA
+对该国贸易成本
+trade_cost_for_target_factor = -0.4
+对宗主国额外贸易
+extra_trade_to_target_factor = 0.25
+			}
+可出口资源修正
+min_export = 0.1
+志愿军数量
+send_volunteer_size = 3
+志愿军下限
+send_volunteer_divisions_required = -0.25
+敌占区抵抗度
+resistance_growth_on_our_occupied_states  = 0.1 
+敌占区顺从度
+compliance_growth_on_our_occupied_states = -0.15
+本方抵抗增长速度
+stability_factor = -0.1
+军工建造速度
+production_speed_arms_factory_factor = 0.1
+生产效率
+production_factory_efficiency_gain_factor = 0.05
+生产许可购买花费
+license_purchase_cost = -0.5
+民主（可修改）理念增减
+democratic_drift = -0.1
+fascism_drift = 0.075
+neutrality_drift = 0.025
+（communism  ）
+消费品调整
+consumer_goods_factor = 0.2
+研究速度
+research_speed_factor = 0.1 
+稳定度每周增长
+stability_weekly = 0.002
+
+志愿军紧张度限制
+send_volunteers_tension = -0.20
+每周增加人力
+weekly_manpower = 1000
+战争支持度调整
+war_support_factor = 0.10
+正当化时间调整
+justify_war_goal_time = -0.75
+核心领土防御
+army_core_defence_factor = 0.1
+训练时间
+training_time_factor = -0.1
+核心领土防御调整
+army_morale_factor = 0.1
+人力增加
+conscription = 0.02
+民用工厂建造速度
+production_speed_industrial_complex_factor = 0.1
+基础设施建造速度
+production_speed_infrastructure_factor = 0.1
+工厂修复速度
+industry_repair_factor = 0.2
+生产效率上限
+production_factory_max_efficiency_factor = 0.1
+意识形态抵制
+drift_defence_factor = 0.5
+军队攻击
+army_attack_factor = -0.5
+军队防御
+army_defence_factor = -0.5
+动员速度
+mobilization_speed = -0.3
+人口修正
+conscription_factor = -0.35
+指挥增长
+command_power_gain_mult = -0.7
+可以创建阵营
+			rule = {
+				can_create_factions = yes
+			}
+意识形态不符阵营设定
+can_join_opposite_factions = no
+
+政治顾问前置
+完成国策
+has_completed_focus = GER_four_year_plan
+没有国策
+NOT = { has_completed_focus = GER_demand_sudetenland }
+战争目标紧张度限制
+generate_wargoal_tension = 1.00
+加入阵营的紧张度限制
+join_faction_tension = 0.80
+租借法案紧张度限制
+lend_lease_tension = 0.50
+志愿军紧张度限制
+send_volunteers_tension = 0.50
+保障独立紧张度限制
+guarantee_tension = 0.25
+吞并国家花费
+annex_cost_factor = 0.5
+民政情报泄露
+civilian_intel_to_others = 20.0
+陆军情报泄露
+army_intel_to_others = 5.0
+海军情报泄露
+navy_intel_to_others = 20.0
+空军情报泄露
+airforce_intel_to_others = 5
+傀儡花费
+puppet_cost_factor = -0.3
+与主要国家开战减少时间
+justify_war_goal_when_in_major_war_time = -0.80
+是否建立合作政府
+can_create_collaboration_government = no
+是否可以免宣战对抗相同意识形态者
+can_declare_war_on_same_ideology = no
+是否可以改变政府
+can_force_government = yes
+是否可以送志愿军
+can_send_volunteers = no
+是否可以傀儡
+can_puppet = no
+是否可以保独降低紧张度
+can_lower_tension = yes
+是否只能正当化国家来威胁其他国家
+can_only_justify_war_on_threat_country = yes
+可以保障其他意识形态独立
+can_guarantee_other_ideologies = yes
+顺从度
+compliance_growth = 0.15

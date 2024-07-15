@@ -1,0 +1,5 @@
+DXQ_jiangling_buff = {
+	icon = GFX_decision_DXQ_jiangling_buff
+	visible = {}	
+	}
+

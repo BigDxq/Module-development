@@ -1,0 +1,52 @@
+DXQ_jiangling_buff_decisions = {
+	#功能选择
+	DXQ_jiangling_Development_dec = {
+	icon = generic_construction
+		#days_remove = 3
+		allowed = { always = yes }
+		available = { is_ai = no }
+		visible = { always = yes }
+		fire_only_once = yes
+		cost = 0
+		complete_effect = { 
+		custom_effect_tooltip = DXQ_jiangling_Development_dec_tip_0
+        hidden_effect = { country_event = DXQ_jiangling_event.001 }
+		}
+		ai_will_do = { factor = 0 }
+		}
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

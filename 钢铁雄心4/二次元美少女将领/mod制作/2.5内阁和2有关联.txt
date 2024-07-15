@@ -1,0 +1,276 @@
+基于 Current 教程更改
+更新于2021年12月18日 目前版本1.11.4
+需要文件
+/common/characters
+------------------------------------------------------------
+
+#顾问种类大全
+theorist #理论家
+high_command #总司令
+army_chief #陆军部长
+
+air_chief #空军部长
+
+navy_chief #海军部长
+
+political_advisor #政治顾问
+
+------------------------------------------------------------
+
+
+    #陆军内阁 
+
+     JSJ_Xue_Yue={
+		name=JSJ_Xue_Yue
+		portraits={
+			army={
+				large="gfx/leaders/JSJ/Xue_Yue.png"
+				small="gfx/interface/ideas/idea_JSJ_Xue_Yue.dds"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+		
+		#上面的看教程2
+		
+		这是理论家的
+		
+		advisor={
+			cost = 100			          #花费政治点
+			slot = theorist               #顾问种类 看最上面种类大全
+			idea_token = JSJ_Xue_Yue      #名称代码 与 将领代码 一致
+			ledger = army                 #种类 这里是陆军 #空军 air    #海军 navy
+			allowed = {
+				original_tag = JSJ        #属于什么国家 这里写 国家代码 控制台 输入tdebug查看国家代码
+			}
+			
+			traits = {
+				military_theorist         #特性 这里是减 陆军战略 研究时间
+			}
+			ai_will_do = {
+				factor = 0.200
+			}
+		}
+	}
+	
+------------------------------------------------------------
+
+#政治内阁 
+
+     JSJ_GW_1={                                #和领导人一致
+		name = "JSJ_GW_1"
+		portraits={
+			army={                             #内阁图片
+				small="gfx/interface/ideas/idea_.png""      #图片路径不多说
+			}
+		}
+		
+		#上面不多说
+		
+		advisor={
+			cost = 150
+			slot = political_advisor         #顾问种类
+			idea_token = JSJ_GW_1
+			allowed = {
+				original_tag = JSJ
+			}
+			traits = {
+				traits_A_3                   #特性 这是自定义的别写 看下面的笔记
+			}
+		}
+	}
+	
+------------------------------------------------------------
+#政治内阁的特性
+
+backroom_backstabber 密谋的暗害者 政治点+5% 意识形态抵制+15%
+
+captain_of_industry 工业领袖(亲妈) 基础设施,民用工厂,化学合成厂建造速度+10%
+
+war_industrialist 战争实业家(亲爸) 军用工厂,海军船坞,储油罐建造速度+10%
+
+popular_figurehead 受欢迎的花瓶 稳定度+15%
+
+propaganda_expert 政治宣传大师 战争支持度+10%
+
+fortification_engineer 筑垒工程师 陆,海要塞与防空炮阵建造速度+20%
+
+armaments_organizer 军备组织者 民转军消耗-20%
+
+quartermaster_general 军需将军 机场，港口，雷达，火箭基地，核反应堆建造速度+15%
+
+communist_revolutionary 社会主义男儿 共产主义支持度+0.1
+
+democratic_reformer 皿煮死宅 皿煮主义支持度+0.1
+
+fascist_demagogue 法西斯废物 民族主义支持度+0.1
+
+monarchist_media_mogul 君主主义古董 中立主义支持度+0.1
+
+silent_workhorse 沉默的实干家 政治点数+15%
+
+prince_of_terror 恐怖巨头 非核心人力+2% 外国颠覆效率-30% 游击战效率—25%
+
+smooth_talking_charmer 巧言的魔术师 贸易协定关系修正+10%
+
+anti_fascist_agent 反法西斯特工 稳定度+10% 法西斯支持度—0.02
+
+economist 经济学家 生产效率上限+5%
+
+connected_citizen 从群众中来 政治点数+5% 稳定度+5%
+
+liberal_journalist 自由记者 政治点数+5% 皿煮主义支持度0.05
+
+ideological_crusader 意识形态十字军 相同意识形态每月关系变化+100%
+
+compassionate_gentleman 慈悲的绅士 改善关系+15%
+
+first_lady 共和国第一夫人 稳定度+5% 战争支持度+5%
+
+financial_expert 金融专家 消费品-5%
+
+editor 编辑 政治点数+5% 稳定度+5%
+
+anti_communist_crusader 反共斗士 稳定度+5% 共产主义支持率—0.1`
+
+ambitious_union_boss 雄心壮志的工会领袖 消费品—5% 共产主义支持度+0.1
+
+syncretic_revanchist 共治主义复仇者 制造战争目标的全球紧张度限制-50% 正当化战争时间—25% 法西斯支持度+0.1
+
+social_reformer 社会改革者 稳定度+15% 皿煮主义支持度+0.1
+
+shadow_of_calles 卡列斯的影子 政治点+15% 中立主义支持度+0.1
+
+socialist_novelist 社会主义小说家 战争支持度+10% 共产主义政治点+.1
+
+red_suffragette 红色女权者 适役人口+2% 稳定度-10%
+
+royalist_bulldog 保皇党的斗犬 战争支持度+10% 中立主义支持度+0.1 
+
+economic_organizer 经济改革者 消费品—5% 稳定度+5% 
+
+old_figurehead 年迈的傀儡 战争点+15%
+
+genial_anti_revolutionary 温和的反革命者 政治点+10% 稳定度+5%
+
+council_communist 议会共产主义者 政治点-30% 工厂产出+10% 海军船坞产出+10%
+
+resistance_banker 抵抗组织的银行家 生活消费品—10% 游击战效率+10% 
+
+colonial_communist 殖民地共产主义者 非核心人力+2% 每周人力+250 共产主义支持度+0.1
+
+adventurous_daredevil 大胆的冒险者 政治点+5% 空军经验+3% 陆军组织恢复+10% 战争支持度+5%
+
+------------------------------------------------------------
+陆军部长######################################################################
+(这里顾问分3级:专家,大师,奇才.决定等级的只有最后的一个数字)
+(如下)
+army_chief_organizational_1  专家
+army_chief_organizational_2  大师
+army_chief_organizational_3  奇才
+----------------------------------
+army_chief_organizational  陆军组织
+
+army_chief_drill 陆军演戏
+
+army_chief_offensive 陆军进攻
+
+army_chief_defensive 陆军防御
+
+army_chief_maneuver 陆军机动
+
+army_chief_morale 陆军组织度恢复
+
+army_chief_reform 陆军经验增长
+
+army_chief_old_guard 保守派 政治点+10% 陆军经验—10% (此顾问没有等级 这就是原代码)
+
+海军部长######################################################################
+(同陆军部长一样)
+
+navy_chief_maneuver 海军机动
+
+navy_chief_decisive_battle 决战 水面舰船攻防加成
+
+navy_chief_commerce_raiding 贸易袭击 袭击运输船效率
+
+navy_chief_naval_aviation 海军航空
+
+navy_chief_decisive_battle 舰队后勤 海军最大航程参数
+
+navy_chief_reform 海军改革 海军经验增长
+
+空军部长######################################################################
+(同上)
+
+air_chief_ground_support 战场支援 空优
+
+air_chief_safety 空军安全
+
+air_chief_reform 空军改革 
+
+air_chief_night_operations 夜间行动
+
+air_pilot_training 飞行员训练 空军训练经验增长 轻重战斗机燃油石油减少
+
+air_chief_all_weather 全天候
+
+air_air_combat_training 王牌训练
+
+总司令######################################################################
+(一样.)
+
+army_infantry 步兵部队
+
+army_artillery 炮兵部队
+
+army_cavalry 骑兵部队
+
+army_commando 特种部队（最高两级)
+
+army_regrouping 陆军组织度恢复
+
+army_entrenchment 战壕速度
+
+army_armored 装甲部队
+
+army_logistics 陆军后勤
+
+air_air_combat_training 王牌训练
+
+navy_amphibious_assault 两栖登陆
+
+air_strategic_bombing 战略轰炸 战略轰炸加成 轰炸任务攻击防御机动加成
+
+air_close_air_support 密接支援 密接支援任务攻击防御机动加成
+
+air_tactical_bombing 战术轰炸 地面支援
+
+navy_naval_air_defense 海军对空
+
+navy_carrier 航空母舰 出击效率加成
+
+air_air_superiority 制空 夺取制空权攻击防御机动加成
+
+air_bomber_interception 轰炸机拦截 拦截攻击防御机动加成
+
+air_naval_strike  对海加成
+
+navy_screen 屏卫舰加成
+
+navy_submarine 潜艇加成
+
+navy_anti_submarine 反潜 对潜侦测
+
+air_airborne 空降加成
+
+army_concealment 削弱敌方空中支援
+
+navy_capital_ship 主力舰加成

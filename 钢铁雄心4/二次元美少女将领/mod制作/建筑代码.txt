@@ -1,0 +1,56 @@
+
+随机地点random_owned_controlled_state = {}
+地点id小 province = 5291
+#########拆除条件建筑#########
+random_owned_controlled_state = {
+		limit = { infrastructure >0 }
+		remove_building = { type = arms_factory level = 1 }
+		}
+#########建造#########
+add_building_construction = { type = dockyard level = 3 instant_build= yes  }
+########破坏建筑######
+damage_building = {
+    type = infrastructure
+    damage = 1
+}
+############资源#########
+add_resource = { type = aluminium amount = 5 state = 276 } 
+
+num_of_dockyard
+resources= { steel=5 }
+steel 铁
+aluminium 铝
+tungsten 钨矿
+oil = 石油
+rubber 橡胶
+chromium 铬矿
+######################
+基础建设   infrastructure
+防空炮     anti_air_building
+军用工厂   arms_factory
+民用工厂   industrial_complex
+炼油厂 synthetic_refinery
+储油罐 fuel_silo 
+机场   air_base
+海军基地   naval_base
+路上要塞  bunker
+海岸炮     coastal_bunker
+海军造船厂 dockyard
+
+加建筑槽 add_extra_state_shared_building_slots = 2
+
+
+
+
+#########################
+大都市圈 megalopolis
+大城市 metropolis
+密集城镇 large_city
+城镇 city
+稀疏城镇 large_town
+发达乡村 town
+农村 rural
+牧区 pastoral
+
+飞地 enclave
+荒漠 wasteland

@@ -1,0 +1,5 @@
+DXQ_jiangling_buff_decisions = {
+	icon = ger_reichskommissariats	
+	allowed = { always = yes }
+}
+

@@ -1,0 +1,99 @@
+focus = {
+		id = PVP_
+		icon = GFX_focus_generic_army_tanks
+		x = 1
+		y = 1
+		relative_position_id = PVP_
+
+		cost = 8.6
+		
+		prerequisite = {
+		focus =
+		}
+		mutually_exclusive = {
+		
+		}
+		
+		
+
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+		
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+		   
+			
+		}
+    }
+
+country_event = {
+	id = sau.
+	title = sau..t
+	desc = sau..d
+	picture = GFX_report_event_soviet_purge_officers_01
+	
+	is_triggered_only = yes
+	#fire_only_once = yes#
+	trigger = {
+	}
+	
+		option = {
+			name = sau..a
+			ai_chance = { factor = 10 }
+			
+			
+			
+		}
+	
+    }
+	
+	
+	####决议####
+		icon = GFX_decision_generic_political_discourse
+	
+		visible = {  
+		
+        }
+		
+		cost = 50
+		
+		ai_will_do = {
+			factor = 10
+		}
+		#突出地区highlight_states = {
+			state = 597
+		}
+		available = {
+
+		}
+		
+		#一次fire_only_once = yes
+		
+		# 多少天后可再次选择days_re_enable = 5 
+		
+		# 持续时间days_remove = 5 
+		modifier  = {
+		
+		}
+		
+		#立即效果complete_effect = {}
+		#完成效果remove_effect = {}
+		

@@ -1,0 +1,119 @@
+﻿l_english:
+ 
+ #开局基本信息
+ DXQ_jiangling_buff:0 "二次元将领招募"
+ DXQ_jiangling_buff_decisions:0 "二次元将领招募"
+ DXQ_jiangling_Development_dec:0 "招募一些二次元女仆将领，横扫欧洲，做回自己！"
+ DXQ_jiangling_Development_dec_tip_0:0 "触发事件：大臣们上报的一封信"
+ #核弹事件制作
+ DXQ_jiangling_hedan_name:0 "招核男儿"
+ DXQ_jiangling_hedan_tooltip:0 "我们的领土出现了一个新的太阳......"
+ DXQ_jiangling_hedan_event.000.a:0 "天有二日"
+ DXQ_jiangling_hedan_event.000.b:0 "就在刚才，我们国家的民众见识到了第二个太阳。\n如果它不是在自己国家领土上就好了。\n\n这个太阳以极高的温度融化了爆炸中心的一切事物，墙壁、武器、沙袋，还有国家民众对这场战争的支持意识。\n\n当发生这件事的时候，国家内所有人都意识到了一件事：\n这场战争要结束了，不管我们是胜是负。"
+ DXQ_jiangling_hedan_event.000.c:0 "这将会是我们国家的落幕"
+ DXQ_jiangling_hedan_development000_tip:0 "核弹爆炸带来的一切往往是沉重的（地狱笑话吧的人可能不这么想）"
+ #前置事件
+ DXQ_jiangling_event.001.t:0 "大臣们上报的一封信"
+ DXQ_jiangling_event.001.d:0 "此诚危急存亡之秋，故臣私心想着，若是能招募一批勇冠三军之士，听我主圣典，为我主划策，定是极好的！\n\n且将帅之才应仪表堂堂，威风八面。而此种人才世上不可多得，故应尽快行动。\n\n（人话：招一批牛逼又好看的美少女围着你转）"
+ DXQ_jiangling_event.001.a:0 "那你还在这愣着干啥，去啊，全招过来"
+ DXQ_jiangling_Development_dec_tip_1:0 "在全国范围大规模强制招募，蚊子飞过去也得拉过来看看长相"
+ DXQ_jiangling_event.001.b:0 "有计划性的招募一批，不要影响到国内生活"
+ DXQ_jiangling_Development_dec_tip_2:0 "张贴海报，自愿报名，达到招募标准即可入驻"
+ DXQ_jiangling_event.001.c:0 "招募一个辅佐就行，我不需要太多"
+ DXQ_jiangling_Development_dec_tip_3:0 "将领优中选优，许多人为了这一个位置开始卷"
+ DXQ_jiangling_event.000.a:0 "算了，我阳痿，我不行"
+ DXQ_jiangling_Development_dec_tip_4:0 "问君能有几多愁，恰似太监逛青楼"
+ DXQ_jiangling_zhaomu_name:0 "招募行动"
+ #游玩者专属事件：肾虚
+ DXQ_jiangling_event.400.a:0 "丑闻败露"
+ DXQ_jiangling_event.400.b:0 "三个月前国家突然不知道从哪出现了一则大新闻，经过三个月的发酵现在已经深入人心，现在每个人都知道一件事。\n\n我们的军队指挥人——现在在电脑前坐着的人竟然是个阳痿！\n\n此消息一出民众哗然。\n然而，随着这一则新闻的出现，预想中八卦满天飞的事情却没有发生。相反，新闻发生后街上的人们脸色都不怎么好。\n一天后，内务大臣也说自己是个阳痿。两天后，某省省长也公开承认。三天后，医院男科挤满了人。四天后，人们发现医生也面露苦色......"
+ DXQ_jiangling_event.400.c:0 "这国家和我这人生算是完了"
+ DXQ_jiangling_development400_tip:0 "肾虚，有时是在过度劳累之后......"
+ DXQ_jiangling_shenxu_name:0 "肾虚公子"
+ DXQ_jiangling_shenxu_tooltip:0 "肾虚，有时是在过度劳累之后......"
+ #全国范围的强制招募
+ DXQ_jiangling_event.100.a:0 "招募情况"
+ DXQ_jiangling_event.100.b:0 "经历了三个月鸡飞狗跳的招募情况，我们恪守了以下准则：逼良为娼。\n\n毕竟有些人要与家人共度战乱，有些人要照顾弟弟妹妹，所以在这乱世里她们不是很想为国效力。\n\nBut！\n\n虽然困难重重且国内因为招募行动动荡不堪，但我们还是拥有了一批寻常人得不到的将领"
+ DXQ_jiangling_event.100.c:0 "这一切（对我来说）都是值得的"
+ DXQ_jiangling_development100_tip:0 "因为在强征阶段耗时太长，所以她们都没有经历过系统性的军事学习"
+ #自愿招募
+ DXQ_jiangling_event.200.a:0 "招募情况"
+ DXQ_jiangling_event.200.b:0 "各个部门张贴海报、组织面试、技能培训、军官考试。招募工作有条不紊的进行着。\n\n对于想在国家发光发热的人们，我们可以让她们自身技能达到一个高峰。\n\n而对于那些极有天赋但因生活所迫无意报国的人们，我们也只能感叹人各有命"
+ DXQ_jiangling_event.200.c:0 "虽然可惜，但这都是她们自己的选择"
+ DXQ_jiangling_development200_tip:0 "在招募期间她们有充足的时间学习，而又因为她们本就是万里挑一的人中龙凤，所以在军事上这些新进将领们已经超过了许多老将的学识。\n\n对于那些没考上的人来说，我们可以报销往来路费:)"
+ #初音未来专属事件：初音演出
+ DXQ_jiangling_event.2001.a:0 "初音未来的演出"
+ DXQ_jiangling_event.2001.b:0 "在一年前将初音未来招募进军队后，将军和士兵们都对身边多了个能歌善舞的人感到很高兴。而且为了表明自己不是花瓶，她还表现出了极强的工作能力，工作一丝不苟从不出错。\n\n但是身边的明眼人都能看出来，她一直都很想继续唱歌。\n\n今天你像往常一样来到办公室准备处理日常事务，但是桌上却多了一封信，信中写道：\n我依然想在舞台上唱歌\n\n蓝色信封，白色信纸，署名：\n初音未来"
+ DXQ_jiangling_event.2001.c:0 "那就让她实现自己的愿望"
+ DXQ_jiangling_development2001_tip:0 "笼中的鸟儿总是向往天空的\n虽然只是上舞台这种要求，但因为初音唱歌很好听，也许会有些意想不到的效果"
+ DXQ_jiangling_chuyin_name:0 "初音政权"
+ DXQ_jiangling_chuyinzhengquan_tooltip:0 "初音的歌声已是天籁，任何人听到都会放下戒心，静静欣赏"
+ #只招募一个
+ DXQ_jiangling_event.300.a:0 "招募情况"
+ DXQ_jiangling_event.300.b:0 "因为职位只有一个，所以每天招募部门要对踏平门槛的人们进行复杂细致的筛选。\n\n包括但不限于体能、记忆力、计算能力、大局观、社交、身高、发质、血氧浓度、骨骼密度、基因序列......\n（怎么往奇怪的地方去了）\n等等。\n\n而那个充满荣光的位置，也只有综合成绩最好的人才能担任，大概"
+ DXQ_jiangling_event.300.c:0 "那就是她了"
+ DXQ_jiangling_development300_tip:0 "虽然有很多人的各种综合素质比她好，但是又有谁能拒绝一个可以手搓核弹的人呢。\n\n尤其是还在这样的一个时期......\n\n虽然经过严格的学习让她掌握了一些基础知识，但是她在除了攻击的其它方面仍然称不上是个非常好的将才"
+ #惠惠专属事件：核技术
+ DXQ_jiangling_event.3001.a:0 "获得科技"
+ DXQ_jiangling_event.3001.b:0 "惠惠已经被提拔上来两年的时间了。\n\n这两年惠惠每天都会进行各种战斗预测、报告处理，可以说整个国家除了你最忙的就是她。\n\n但是对此惠惠毫无怨言。倒不如说，每天都能吃的很饱，而且可以随意释放爆裂魔法（她在哪放的？！！我怎么不知道？！！）的生活惠惠很是享受。至于每天繁忙的公务。在吃的面前根本算不上什么。\n\n因为惠惠每天都在这种高强度的用脑下，所以...\n\n尤里卡！   惠 惠   向您分享了核裂变技术！"
+ DXQ_jiangling_event.3001.c:0 "这个核技术是不是每次耗废能量三顿饭？"
+ DXQ_jiangling_development3001_tip:0 "您对核裂变技术的研究加深了！"
+ #触发科技
+ DXQ_jiangling_zuobi_name:0 "TM熊的力量！"
+ DXQ_jiangling_event.000.t:0 "化身恶魔"
+ DXQ_jiangling_event.000.d:0 "现在你已经触发了本mod的终极作弊方式。\n\n这个功能是作者本人为了能在多人游戏中稳定打爆自己朋友狗头而留的后门。\n\n你能触发真的是不可思议，偷偷看代码了吧？\n\n请放心，为了在联机中把朋友蒙在鼓里，这个功能除了这个界面外不会在游戏内其他任何地方被看见，只要你别太嚣张。\n这些加成不会直接作用在部队上（除了堑壕值），也就是说部队软攻硬攻不会有任何实质性变化。你拿九步一炮打高达依然打不过。"
+ DXQ_jiangling_event.000.b:0 "我tm直接化身第四天灾！"
+ DXQ_jiangling_event.000.tip:0 "现在你的国家获得各方面加强。"
+ #强制招募专属事件
+ #事件
+ DXQ_jiangling_event.4001.a:0 "国民抗议"
+ DXQ_jiangling_event.4001.b:0 "由于之前招募将领时没有考虑一些特殊家庭群体，所以国内民众一直都有很大的情绪，而现在，这股情绪爆发了。\n与家人共度战乱，与姐妹患难与共，与爱人长相厮守。本来都是美好的故事，但现在却因为一纸军书使她们分隔万里。\n\n虽然已成为将领的她们一直没有提及这些事情，但也仅限于没提及而已。\n而现在，碍于身份未表达之事，民众们要开始替她们表达了(物理上)"
+ DXQ_jiangling_event.4001.c:0 "让她们回去吧，这是民意"
+ DXQ_jiangling_event.4001.d:0 "一群刁民，这是国家安危！"
+ DXQ_jiangling_development4001_tip:0 "君子不夺人所好，应成人之美\n让她们回去吧"
+ DXQ_jiangling_development4001_tip_1:0 "镇压！镇压！"
+ #事件一（分支一）
+ DXQ_jiangling_event.5001.a:0 "群情激愤"
+ DXQ_jiangling_event.5001.b:0 "镇压应带来的效果远远没有达到预期，应该说，镇压是为反抗力量送装备。\n因为派去镇压的很多士兵都觉得强人所难是不道德的，所以他们基本都没有对群众使用武力。相反，士兵们为了表达自己的立场，还将武器送给了反抗群众。\n\n即使处在现在这个时期，在很多人心中，小家还是凌驾于大家之上。"
+ DXQ_jiangling_event.5001.c:0 "我这一切都是为了国家"
+ DXQ_jiangling_development5001_tip:0 "难道，我真的做错了吗"
+ #事件二（分支一）
+ DXQ_jiangling_event.6001.a:0 "群情激愤"
+ DXQ_jiangling_event.6001.b:0 "自从上次民众发表意见(物理)后，你也压不住他们，只能让将领轮番回家与亲友团聚。\n该怎么说呢，人类到底是欲望驱使，在满足私情之后，他们又将国家情怀放在了第一。\n之前游行闹事的愧疚感终于在环游世界后回来了，群众们开始为之前发生的事情感到抱歉，并决定在战争中贡献自己的一份力。"
+ DXQ_jiangling_event.6001.c:0 "毕竟我是为了国家"
+ DXQ_jiangling_development6001_tip:0 "我只有一个梦想：国泰民安"
+ DXQ_jiangling_qunqingjifen_name:0 "群情激愤"
+ DXQ_jiangling_qunqingjifen_tooltip:0 "怨不在大，可畏惟人，载舟覆舟，所宜深慎"
+ #事件一（分支二）
+ DXQ_jiangling_event.7001.a:0 "民之所向"
+ DXQ_jiangling_event.7001.b:0 ""
+ DXQ_jiangling_event.7001.c:0 ""
+ DXQ_jiangling_development7001_tip:0 ""
+ #事件二（分支二）
+ DXQ_jiangling_event.8001.a:0 "民之所向"
+ DXQ_jiangling_event.8001.b:0 ""
+ DXQ_jiangling_event.8001.c:0 "都是为了生活"
+ DXQ_jiangling_development8001_tip:0 "兴，百姓苦。亡，百姓苦。"
+ DXQ_jiangling_chuyin_name:0 "民之所向"
+ DXQ_jiangling_chuyinzhengquan_tooltip:0 "民之所向，政之所往"
+ #######################################################################################################
+ #间谍系列
+ #######################################################################################################
+ DXQ_jiangling_jiandie_zhaomu_name:0 "间谍双子"
+ DXQ_jiangling_jiandie_event.001.t:0 "夜晚的不速之客"
+ DXQ_jiangling_jiandie_event.001.d:0 "“喂，你。”\n晚上十点半，你正准备躺下睡觉时窗台传来了一个人说话的声音。\n“你是这个国家的最高负责人是吧。”\n\n是这样没错，但你先说说你怎么到这的。一边说话你一边朝着床头走去，因为枕头下放了一把手枪。\n\n少女目光一直在窗外的月亮上，偶尔会看下街道的人，没看过你一眼。\n“你要是想在那里找枪我建议你先歇着吧。”窗台上坐着的少女背对着你边摇晃着那把是你的手枪边说。“你前一阵子不是大张旗鼓的招了一批将军吗，我来这只是想问问你，还有没兴趣多加点人手。”\n\n“毕竟，我也受够了现在这个局势。”"
+ DXQ_jiangling_jiandie_event.001.a:0 "只有你一个人吗？"
+ DXQ_jiangling_jiandie_Development_dec_tip_1:0 "明枪要挡，暗箭也要防"
+ DXQ_jiangling_jiandie_event.001.b:0 "国家人才很多，还用不着你操心"
+ DXQ_jiangling_jiandie_Development_dec_tip_2:0 "开玩笑，谁会留一个半夜坐在窗台上的美少女做事呢"
+ #招募千束，泷奈
+ DXQ_jiangling_jiandie_event.100.a:0 "千束任职"
+ DXQ_jiangling_jiandie_event.100.b:0 "在上次夜里认识千束后，她表达了自己想要为这个国家奋斗的意志。而您也欣然同意，毕竟国家人才还是越多越好。\n\n不过自那之后有三个月没见过她，走之前千束说要去找一个朋友一起来，还说她的朋友也是做间谍的一把好手。\n\n目前看来......\n应该就是她旁边的那个人了。\n\n“千束，泷奈，向您报道。”"
+ DXQ_jiangling_jiandie_event.100.c:0 "还以为你上次耍我呢"
+ DXQ_jiangling_jiandie_development100_tip:0 "还得是美少女贴贴啊"
+ DXQ_jiangling_jiandie_tooltip:0 "千束和泷奈的间谍知识好像很...先进？\n反正她俩共享的情报知识能对我们国家有很大帮助"
+ #千束，泷奈入狱
+ DXQ_jiangling_jiandie_event.200.a:0 "意料之外的事件"
+ DXQ_jiangling_jiandie_event.200.b:0 "处理战报，分管后勤，调兵遣将，你日复一日的坐在这办公桌前为了国家未来奋斗。窗外楼下嘈嘈杂杂的：估计又是哪个军官牺牲了吧，一会去发表慰问就行。往常都是这些鸡毛蒜皮的小事。你这么想着。\n噔噔蹬！(敲门声响起) 进来吧。来人是你的亲信副官。报告！刚才抓获两个敌国间谍。本来抓获间谍这种事不应该上报自己，但是你觉得副官不会不知道。既然执意要上报，那肯定不对劲。“带上来。”\n一红一蓝两个身影出现在办公室，蓝色你没见过，但是衣服款式和红色的一样，想必是一类，至于红色......\n副官说：“这两人是帝国间谍，在档案室发现的，其中一人之前在晚上我见过她在您窗台前。估计您认识，所以带上来。”\n看来那天拒绝后没再见过应该是去其他国家了。\n“好久不见啊，锦木千束”"
+ DXQ_jiangling_jiandie_event.200.c:0 "敌国间谍，那就没办法了啊"
+ DXQ_jiangling_jiandie_development200_tip:0 "千束，泷奈因窃取国家一级机密罪被关押"

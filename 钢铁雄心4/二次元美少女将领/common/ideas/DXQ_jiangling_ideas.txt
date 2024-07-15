@@ -1,0 +1,269 @@
+ideas = {
+	country = {#肾虚
+	        DXQ_jiangling_shenxu = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			picture = shenxugongzi
+			name = DXQ_jiangling_shenxu_name
+           		modifier = {
+				conscription_factor = -0.25
+				army_core_defence_factor = -0.2
+				army_core_attack_factor = -0.2
+				industrial_capacity_factory = -0.35
+				conscription_factor = -0.35
+				stability_weekly = 0.1
+				custom_modifier_tooltip = DXQ_jiangling_shenxu_tooltip
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+            		ai_will_do = {
+           			factor = 0
+    			}
+     		}
+	}
+	country = {#核弹附加
+	        DXQ_jiangling_hedan = {
+			allowed = {
+				always = no
+			}
+			picture = hedan
+			name = DXQ_jiangling_hedan_name
+           		modifier = {
+				surrender_limit = -0.3
+				stability_weekly = -0.2
+				war_support_weekly = -0.2
+				custom_modifier_tooltip = DXQ_jiangling_hedan_tooltip
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+			cancel = { has_war = no }
+     		}
+	}
+	country = {#初音政权
+	        DXQ_jiangling_chuyin = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			picture = chuyinzhengquan
+#			picture = ger_mefo_bills
+			name = DXQ_jiangling_chuyin_name
+           		modifier = {
+				compliance_gain = 3
+				resistance_growth = -0.2
+				custom_modifier_tooltip = DXQ_jiangling_chuyinzhengquan_tooltip
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+            		ai_will_do = {
+           			factor = 0
+    			}
+     		}
+	}
+	country = {#间谍双子
+	        DXQ_jiangling_jiandie_zhaomu = {#
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			name = DXQ_jiangling_jiandie_zhaomu_name
+			picture = jiandieshuangzi
+			set_country_flag = chosen_idea
+           		modifier = {
+				operative_slot = 2
+				intel_network_gain_factor = 0.2
+				own_operative_detection_chance_factor = -0.2
+				custom_modifier_tooltip = DXQ_jiangling_jiandie_tooltip
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+            		ai_will_do = {
+           			factor = 0
+    			}
+     		}
+	}
+	country = {#群情激愤
+		DXQ_jiangling_qunqingjifen = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			name = DXQ_jiangling_qunqingjifen_name
+			picture = qunqingjifen
+			modifier = {
+				consumer_goods_factor = -0.05
+				army_core_defence_factor = 0.2
+			}
+			coust = 0
+			removal_cout = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	country = {#民之所向
+		DXQ_jiangling_minzhisuoxiang = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			name = DXQ_jiangling_minzhisuoxiang_name
+			picture = minzhisuoxiang
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+			coust = 0
+			removal_cout = -1
+			cancel_if_invalid = no
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	hidden_ideas = {#将领招募修正
+	        DXQ_jiangling_zhaomu_hidden_problem = {#
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			name = DXQ_jiangling_zhaomu_name
+           		modifier = {
+				consumer_goods_factor = 0.03
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+            		ai_will_do = {
+           			factor = 0
+    			}
+     		}
+	}
+	country
+	hidden_ideas = {#测试
+#	country = {
+	        DXQ_jiangling_zuobi_hidden_problem = {#
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				is_ai = yes
+			}
+			name = DXQ_jiangling_zuobi_name
+           			modifier = {
+				experience_gain_army_factor = 3
+				experience_gain_army_unit = 30
+				experience_gain_army = 1
+				experience_gain_navy = 1
+				experience_gain_air = 1
+				max_dig_in = 30
+				consumer_goods_factor = -0.8
+				industrial_capacity_factory = 2
+				industrial_capacity_dockyard = 2
+				industry_repair_factor = 2			
+				local_resources_factor = 2
+				local_factory_sabotage = -0.8
+				land_reinforce_rate = 0.9
+				max_command_power = 200
+				command_power_gain_mult = 5
+				stability_weekly = 0.2
+				send_volunteer_size = 50
+				send_volunteers_tension = -1
+			        war_support_weekly = 0.2
+				production_speed_buildings_factor = 2
+				production_factory_max_efficiency_factor = 1
+				production_factory_efficiency_gain_factor = 1
+				research_speed_factor = 1
+				resistance_growth = -1
+				compliance_gain = 0.5
+				navy_fuel_consumption_factor = -0.8
+				air_fuel_consumption_factor = -0.8
+				special_forces_cap = 50
+				training_time_army_factor = -0.5
+				no_supply_grace = 720
+				encryption = 5
+				decryption = 5
+				enemy_operative_capture_chance_factor = 1
+				intel_network_gain_factor = 2
+				own_operative_capture_chance_factor = -1
+				own_operative_detection_chance_factor = -1
+				intel_network_gain_factor = 2
+				root_out_resistance_effectiveness_factor = 3
+				intel_network_gain = 50
+				intelligence_agency_defense = 5
+				naval_critical_score_chance_factor = 0.5
+				naval_has_potf_in_combat_attack = 2
+				naval_has_potf_in_combat_defense = 2
+				strike_force_movement_org_loss = -0.5
+				spotting_chance = 2
+				air_range_factor = 30
+				production_lack_of_resource_penalty_factor = -1
+				river_crossing_factor = -1
+				equipment_capture_factor = -2#缴获装备比例
+				surrender_limit = 0.5 
+				trade_opinion_factor = 1
+				weekly_manpower = 10000
+				airforce_intel_to_others = -50
+				civilian_intel_to_others = -50
+				navy_intel_to_others = -50
+			}
+         		cost = 0
+            		removal_cost = -1
+			cancel_if_invalid = no
+            		ai_will_do = {
+           			factor = 0
+    			}
+     	        }
+			
+			DXQ_jiangling_zuobi2 = {#测试
+			allowed = {
+				always = no
+			}
+			name = DXQ_jiangling_zuobi_name2
+           		modifier = {
+             			attrition = -0.15
+			}
+			}
+
+	}
+}

@@ -1,0 +1,228 @@
+索引：
+政治
+FOCUS_FILTER_POLITICAL
+科研
+FOCUS_FILTER_RESEARCH
+工业
+FOCUS_FILTER_INDUSTRY
+人力
+FOCUS_FILTER_MANPOWER
+战争支持度
+FOCUS_FILTER_WAR_SUPPORT
+稳定度
+FOCUS_FILTER_STABILITY
+领土扩张
+FOCUS_FILTER_ANNEXATION
+红字
+ CHI_inflation_up_tt:0 "§R增加§!通胀\n"
+ 绿字
+ CHI_inflation_down_tt:0 "§G降低§!通胀\n"
+ 
+国策树前置（跳过，取消）
+
+			is_subject = no
+			政党支持率
+			communism > 0.45
+检测非军事区
+	42 = { is_demilitarized_zone = no }
+	51 = { is_demilitarized_zone = no }
+独立和非独立检测
+is_puppet = no
+前置
+prerequisite = { focus = CHI_nationalism }
+prerequisite = { focus = CHI_united_front focus = CHI_anti_communism }（二选一用等号）
+检测军队数量
+has_army_manpower = { size > 849999 } 
+不是某一执政党执政
+NOT = { has_government = communism }
+不是同一阵营
+NOT = { is_in_faction_with = SOV }
+不是和我方战争
+NOT = { has_war_with = TUR }
+是否存在
+exists = yes
+是否加入阵营或加入与---和平的阵营
+is_alone_or_in_faction_at_peace_with_GER = yes
+
+将被放弃如果
+		cancel = {
+			OR = {
+				is_subject = yes
+				has_idea = rhineland_challenge_met
+				has_war_with = AUS
+			}
+		}
+
+		
+国策树语句
+启用政治顾问
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = hjalmar_schacht
+添加政治点数
+add_political_power = 120
+增加战争支持度
+add_war_support = 0.1
+增加稳定
+add_stability = 0.1
+增加科研槽
+add_research_slot = 1
+增加民族精神
+set_variable = { var = CHI_industrial_evacuations_amount_factor value = 0.75 }
+增加陆军经验
+army_experience = 5
+增加紧张度
+add_named_threat = { threat = 5 name = GER_rhineland }
+解锁决议
+unlock_decision_category_tooltip = CHI_army_reform
+增加顺从度
+add_compliance = 10
+增加文字
+custom_effect_tooltip = GER_schleicher_prerequisite
+GER_schleicher_tp:0 "§R如果皇帝发现这件事，他肯定会大发雷霆的…\n\n§!"（红色字体）
+custom_effect_tooltip = GER_oil_shortage_venezuela
+GER_oil_shortage_venezuela:0 "§G委内瑞拉可能确实是一个不错的贸易伙伴，但我们之间远隔重洋，那些毫无防备的运油船可能会成为潜艇眼里诱人的猎物。§!"
+添加建筑
+set_building_level = {
+type = bunker
+province = {
+}
+level = 3
+instant_build = yes
+			}
+增加额外建筑位
+51(省份数字） = add_extra_state_shared_building_slots = 3
+增加建筑（工厂）
+51(省份数字） = add_building_construction = {
+		type = arms_factory
+		level = 3
+		instant_build = yes
+		}
+		
+基础设施 infrastructure
+添加研究加成
+			add_tech_bonus = {
+				name = CHI_unified_industrial_planning
+				bonus = 1.0
+				uses = 2
+				category = industry
+			}
+非军事区判定
+42 = { is_demilitarized_zone = no }
+51 = { is_demilitarized_zone = no }
+添加政治顾问
+custom_effect_tooltip = available_political_advisor
+show_ideas_tooltip = CHI_dai_li
+
+去除民族精神
+remove_ideas = CHI_ineffective_bureaucracy
+完成国策
+complete_national_focus = SPR_regional_defense_council_of_aragon
+
+互斥
+mutually_exclusive = { focus = CHI_foreign_threats }
+政党支持率变化
+add_popularity = { ideology = democratic popularity = 0.1 }
+政党变化
+set_politics = { ruling_party = democratic elections_allowed = yes }
+设定政党名字
+set_party_name = { ideology = neutrality long_name = GER_neutrality_party_kaiserreich_long name = GER_neutrality_party_kaiserreich }
+添加新闻
+news_event = { id =  days = 1}
+暗设无法点击该国策
+hidden_trigger = { always = no }
+追加效果（替换民族精神）
+			swap_ideas = {
+				remove_idea = SPA_recovering_from_civil_war
+				add_idea = SPA_recovering_from_civil_war_2
+			}
+设定政党名称
+			set_party_name = {
+				ideology = neutrality
+				long_name = FRA_orleanist_party_long
+				name = FRA_orleanist_party
+			}
+工厂限制
+num_of_factories > 74
+	
+economy_cost_factor = -0.5
+投降倾向
+conversion_cost_civ_to_mil_factor = -0.5
+触发事件
+		FRA = {
+		country_event = { id = germany.60 }
+				}
+增加外交效果
+SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
+
+				
+增加将军
+				create_corps_commander = {
+					name = "Alexander von Falkenhausen"
+					gfx = GFX_portrait_chi_alexander_von_falkenhausen
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+					id = 603
+					traits = { infantry_officer }
+				}
+战争借口
+			create_wargoal = {
+				type = annex_everything
+				target = SOV
+				expire = 0
+			}
+没有内战
+				POL = {
+					has_civil_war = no
+				}
+同一阵营
+is_in_faction_with = ROOT
+
+has_volunteers_amount_from = {
+	tag = GER
+	count > 0
+}
+增加自治度
+		add_autonomy_ratio = {
+				value = 0.15
+				localization = MAN_the_two_emperors
+			}
+			设定首都
+			set_capital = 608
+检测宣战理由
+			every_country = {
+				limit = {
+					is_independent_china_or_warlord = yes
+				}
+				ROOT = {
+					create_wargoal = {
+						type = annex_everything
+						target = PREV
+					}
+				}
+##########################
+增加科技卡
+驱逐舰型号
+			add_tech_bonus = {
+				name = dd_bonus
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+轻巡洋舰和重巡洋舰
+			add_tech_bonus = {
+				name = cr_bonus
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+陆军学说
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 2
+				category = land_doctrine
+			}

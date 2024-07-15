@@ -1,0 +1,327 @@
+基于 Current 教程更改
+更新于2021年12月18日 目前版本1.11.4
+需要文件
+/common/characters
+/history/countries
+在游戏中按 ~键 输入tdebug查看国家代码(把鼠标移动到你想该的国家的地区会显示地区详细数据 第一行最后3个字母就是国家代码)
+-----------------------------------------------------------------------------------------------------------------------
+最后的一步在 /history/countries
+
+recruit_character = JSJ_Chiang_Ching_Kuo #进行定位 recruit_character = 加领导人 将 内阁 代码
+
+----------------------------------------------------------------------------------------------------------------------
+在/common/characters 中
+
+    JSJ_Chiang_Ching_Kuo={ #领导人代码【可以随便更改】 需要 在 localisation 汉化
+		name=JSJ_Chiang_Ching_Kuo #领导人名字 【可以随便更改】 不显示 汉化 请用领导人代码
+		portraits={
+			civilian={
+				large="gfx/leaders/JSJ/Chiang_Ching_Kuo.png" #图片路径 .png可以任意更改但是需要与图片 格式一致 如图片格式是.dds 这里必须写.dds
+			}                                                #路径gfx/leaders/JSJ/ 可以修改 如不用原版leaders文件 可以自己创建一个任意文件如 general 将路径改成 gfx/general/JSJ/
+		}                                                    #/JSJ/ 也是一致
+		country_leader={
+			ideology=liberalism                              #领导人意识形态
+			traits={  }                                      #领导人特性
+			expire="1965.1.1.1"                              #退休时间
+			id=-1                                            # 未知 不用更改
+		}
+	}
+---------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
+    上将编制
+
+    JSJ_Huang_Baitao={                                                          #不多说和领导人一致
+		name=JSJ_Huang_Baitao                                                   #不多说和领导人一致
+		portraits={
+			army={                                                              #军种
+				large="gfx/leaders/JSJ/Huang_Baitao.png"                        #不多说和领导人一致
+				small="gfx/interface/ideas/idea_JSJ_Huang_Baitao.png"           #内阁路径图片
+			}
+		}
+		corps_commander={                  #上将代码
+			traits={  }                    #技能
+			skill=3                        #将领等级
+			attack_skill=3                 #攻击等级
+			defense_skill=3                #防御等级
+			planning_skill=2               #计划等级
+			logistics_skill=3              #后勤等级
+			legacy_id=-1                   # 未知 不用更改
+		}
+	}
+-----------------------------------------------------------------------------------------------------------------------
+元帅编制
+
+JSJ_Xue_Yue={                                                        #不多说和上将一致 区别是corps_commander={ 变成 field_marshal={
+		name=JSJ_Xue_Yue
+		portraits={
+			army={
+				large="gfx/leaders/JSJ/Xue_Yue.png"
+				small="gfx/interface/ideas/idea_JSJ_Xue_Yue.dds"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+}
+-------------------------------------------------------------------------------------------------------------------------
+海军将领编制
+
+JSJ_XXX={                                 #不多说和上将,元帅 一致 区别是corps_commander={和field_marshal={ 变成navy_leader={
+		name=JSJ_XXX
+		portraits={
+			army={
+				large="gfx/leaders/JSJ/XXX.png"
+				small="gfx/interface/ideas/idea_JSJ_XXX.png"
+			}
+		}
+		navy_leader={
+			traits={  }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+-------------------------------------------------------------------------------------------------------------------------
+技能(注意不能给海军)
+
+trickster	奇袭专家	侦查+25%
+
+winter_specialist	冬季专家lv.1	冬季减员-50%
+
+trait_engineer	工兵	河流攻击+10%
+
+fortress_buster	攻坚专家	攻击要塞攻击+20%  并开启攻城炮兵计划 (与捡破烂冲突)
+
+panzer_leader	装甲领袖	装甲速度+5%，装甲部队攻击+10% 将领等级提升时更有可能增加攻击能力
+
+commando	特战专家	补给耗尽-50%
+
+desert_fox	沙漠之狐	沙漠移动+5% 攻击+10% 防御+10%
+
+swamp_fox	沼泽之狐	沼泽移动+5% 攻击+10% 防御+10%
+
+trait_mountaineer	山地专家	山地移动+5% 攻击+10% 防御+10%
+
+hill_fighter	丘陵专家	丘陵移动+5% 攻击+10% 防御+10%
+
+jungle_rat	丛林之鼠	丛林移动+5% 攻击+10% 防御+10%
+
+ranger	巡林者	森林移动+5% 攻击+10% 防御+10%
+
+urban_assault_specialist	巷战专家	城市移动+5% 攻击+10% 防御+10%
+
+naval_invader	入侵者	两栖登陆速度+30% 准备时间-30%
+
+bearer_of_artillery	炮兵搬运工	炮兵攻击+15%
+
+organizer   组织者            规划速度+10%
+
+cavalry_leader      骑兵领袖     骑兵攻击+15%   摩托化攻击+15%  机械化攻击+15%
+
+infantry_leader       步兵领袖    步兵防御+15%
+
+skilled_staffer       熟练的参谋    将领控制的部队数量+6 将领等级提升时更有可能增加后勤能力
+
+adaptable      强于适应    地形惩罚-50% 寒冷天气每日适应性+0.1 炎热天气每日适应性+0.1
+
+winter_expert    冬季专家lv.2  寒冷天气每日适应性+0.2
+
+panzer_expert    装甲专家  装甲部队防御+15% 执行闪电战和围剿战术的几率增加
+
+combined_arms_expert    协同作战专家   摩托化部队防御+15% 机械化部队防御+15% 执行闪电战和围剿战术的几率增加
+
+cavalry_expert	骑兵专家   骑兵攻击+10%  骑兵防御+15%
+
+scavenger    捡破烂(emmmm)   缴获敌方武器+10%(武器缴获比例增长+3%)MMP这官网和游戏里咋不一样(与攻坚专家冲突)
+
+infantry_expert   步兵专家  步兵攻击+15%   （与伏击专家冲突）
+
+ambusher       伏击专家   战壕上限+10%  战壕中侦查+25%  （与步兵专家冲突,相信我 没人会选这）
+
+amphibious   两栖专家   额外海军补给+240小时 启动海军突击计划
+
+naval_liason    海军联络者  海上轰炸奖励+25%
+
+skirmisher   散兵作战   开启计划探测攻击
+
+paratroopers     伞兵专家     额外空军补给+240小时
+
+camouflage_expert    伪装专家    敌方支援机对部队伤害-50% 我方空中优势加成-50%
+
+improvisation_expert  随机应变的专家  速度+10% 开启计划 临时桥梁
+
+guerilla_fighter       游击专家	   挖战壕速度+25%
+----------------------------------------------------------------------------------------------------------------------------
+元帅独有技能(只有元帅并指挥着上将才有效)
+
+defensive_doctrine	防御专家	堑壕上限+30% (与进攻专家冲突)
+
+offensive_doctrine	进攻专家	本师作战宽度-10% (与防御专家冲突)
+
+fast_planner	快速规划者	计划速度+10%  (与全面规划者冲突)
+
+thorough_planner	全面规划者	计划上限+10%    (与快速规划者冲突)
+
+organisational_leader	组织之上	增援率+2%
+
+inspirational_leader	魅力非凡	陆军组织度恢复+10%
+
+logistics_wizard	后勤专家	补给使用-20%
+
+unyielding_defender      不屈的防御者    防御+10%和执行反击的战术的几率增加 (有特质不灵活的战略家 )
+
+aggressive_assaulter      激进的进攻者   执行突击和冲击的战术几率增加 (有特质天才的战略家)
+
+expert_delegator     专家代表      元帅指挥上将集团军上限+2 (有特质熟练的参谋)
+
+------------------------------------------------------------------------------------------------------------------------------
+海军将领特质(1.6版本)
+
+old_guard   保守者       获得经验效率-25%	
+
+media_personality   媒体人物   	如果命令舰队的骄傲， + 10％的舰队攻击和防御
+
+navy_career_officer      职业军官    + 10％指挥官经验增益
+
+bold    大胆    	海军速度：+ 10％   伤害：+ 5.00％
+
+caustic_personality   刻薄     首次接触的船舶数量：-25％
+
+naval_lineage    海军血统	第一次接触的船只数量：+ 25％撤退决定几率：-25％ 
+
+battleship_adherent   战列舰拥护者  海军对空攻击：-20.00％ 主力舰攻击：+ 10.00％
+
+gunnery_expert   炮击专家    铁人系数+50%
+
+aviation_enthusiast  航空爱好者    制空专家系数+50%
+
+gentlemanly      绅士风度	海军组织：+15 敌人撤退几率：+ 20.00％	
+
+chief_engineer    首席工程师   受到致命一击几率-5%
+
+craven   懦夫    撤退几率+25%  伤害-5%
+
+Cuts Corners   横冲直撞    伤害+20  防御-10%
+
+politically_connected    政治关联   经验获得 -10%   晋升花费 -50%
+-------------------------------------------------------------------------------------------------------------------------------
+陆军将领特质
+
+old_guard    保守者  战壕上限+1  获得经验效率-25%	
+
+brilliant_strategist   杰出的战略家  允许拥有具有攻击性元帅技能    新将领攻击+1 计划+1
+
+inflexible_strategist   不灵活的战略家 允许拥有具有防御性的元帅技能   新将领防守+1后勤+1
+
+politically_connected    政治关联   -10经验获得 -50%晋升花费
+
+career_officer    职业军官   -25%晋升花费      
+
+trait_cautious   谨慎   -20计划速度  作战受伤-50%
+
+trait_reckless    鲁莽   +20计划速度  +100%作战受伤
+
+media_personality  媒体人物   +100%重新分配时间  
+
+harsh_leader    严厉的领袖     攻击+1 组织度恢复-10%
+
+war_hero   战争英雄   晋升花费-50% 重新分配时间+50%
+
+infantry_officer    步兵军官    指挥步兵经验获取+100
+
+cavalry_officer     骑兵军官   指挥机动化部队经验获取+100%
+
+armor_officer     装甲军官       指挥装甲部队经验获取+100%
+
+-------------------------------------------------------------------------------------------------------------------------------
+海军技能(1.6版本)
+seawolf	海狼专家	潜艇攻击+20%
+
+superior_tactician	高级战术专家	最早接战时的参战舰船数+25%
+
+blockade_runner	穿越封锁	撤退成功几率+20%，撤退时舰船速度+25%
+
+spotter	索敌专家	发现几率+0.10
+
+fly_swatter	火鸡射手	海军防空炮攻击+20%
+
+ironside	铁人	主力舰装甲+10
+
+air_controller	制空专家	航母舰载机空中索敌+10%，整备效率+10%
+
+green_water_expert 绿水海军   浅海: 移动+10%  攻击+10%  防御+10%
+
+blue_water_expert  蓝水海军   深海: 移动+10%  攻击+10%  防御+10%
+
+fleet_protector    舰队保护者  掩护效率+20%
+
+arctic_water_expert   冷水海军   损耗-8%
+
+inshore_fighter   近海战士   峡湾与群岛: 移动+10%  攻击+10%  防御+10%
+
+ground_pounder  对岸炮击专家  对岸炮击加成+25%
+
+flight_deck_manager   飞行甲板整备员   飞机出击效率+10%
+
+silent_hunter  猎杀潜艇   鱼雷暴露几率-20%
+
+torpedo_expert   鱼雷专家   鱼雷命中几率+10%
+
+lancer   海上之矛   鱼雷穿透屏卫舰+25%
+
+destroyer_leader   驱逐舰领导者   驱逐舰: 可见度-10%  伤害+10%  鱼雷命中几率+10%
+
+loading_drill_master  装填操练专家  鱼雷冷却-25%
+
+hunter_killer  潜艇杀手 对潜攻击+10% 对潜探测+20%
+
+cruiser_captain  巡洋舰舰长  轻巡洋舰,重巡洋舰:海军速度+10% 伤害+10%
+
+search_pattern_expert  索敌专家  发现敌方舰队概率+20%
+
+lone_wolf  独狼   敌人舰队规模惩罚+`10%
+
+concealment_expert  隐蔽专家   可见度-20%
+
+mine_sweeper  扫雷专家  海军扫雷  扫雷效率+25% 规避水雷+25%
+
+mine_layer   布雷专家  海军布雷效率+25%
+
+smoke_screen_expert  烟雾专家   撤退几率+25%
+
+big_guns_expert  重炮专家  主力舰攻击+15%
+
+safety_first  安全第一  受到致命一击几率-25%
+
+marksman  神枪手  打出致命一击的几率+10%
+
+crisis_magician  化险为夷  受到致命一击的几率-50%
+
+fighter_director 战斗机领航员 战斗机出击效率+20%
+
+dive_bomber 俯冲轰炸手  近距离支援机:对空任务效率+10% 对空攻击+10%
+
+torpedo_bomber  鱼雷轰炸机  舰载海军轰炸机:空军任务效率+10% 对空攻击+10%
+
+
+
+
+
+
+
+
+
+
+
+
+
+

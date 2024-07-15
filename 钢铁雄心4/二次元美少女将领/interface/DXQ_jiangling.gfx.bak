@@ -1,0 +1,98 @@
+spriteTypes = {	
+#事件图片
+	spriteType = {#自愿招募
+		name = "GFX_ziyuanzhaomu"
+		texturefile = "gfx/interface/event_pictures/ziyuanzhaomu.dds"
+	}
+	spriteType = {#强制招募
+		name = "GFX_qiangzhizhaomu"
+		texturefile = "gfx/interface/event_pictures/qiangzhizhaomu.dds"
+	}
+	spriteType = {#群情激愤一
+		name = "GFX_qunqingjifenyi"
+		texturefile = "gfx/interface/event_pictures/qunqingjifenyi.dds"333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#群情激愤二
+		name = "GFX_qunqingjifener"
+		texturefile = "gfx/interface/event_pictures/qunqingjifener.dds"333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#群情激愤三
+		name = "GFX_qunqingjifensan"
+		texturefile = "gfx/interface/event_pictures/qunqingjifensan.dds"333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#民之所向一
+		name = "GFX_minzhisuoxiangyi"
+		texturefile = "gfx/interface/event_pictures/minzhisuoxiangyi.dds"333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#民之所向二
+		name = "GFX_minzhisuoxianger"
+		texturefile = "gfx/interface/event_pictures/minzhiuoxianger.dds"333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#国家遭受核弹
+		name = "GFX_hedanhongzha"
+		texturefile = "gfx/interface/event_pictures/hedanhongzha.dds"33333333333333333333333333333333333333333333333333333333333333333
+	}
+	SpriteType = {#千束夜袭
+		name = "GFX_qianshuyexi"
+		texturefile = "gfx\event_pictures/qianshuyexi.dds"
+	}
+	SpriteType = {#千束招募
+		name = "GFX_qianshuzhaomu"
+		texturefile = "gfx/interface/event_pictures/qianshuzhaomu.dds"
+	}
+	SpriteType = {#千束，泷奈入狱
+		name = "GFX_qianshuruyu"
+		texturefile = "gfx/interface/event_pictures/qianshuruyu.dds"
+	}
+	spriteType = {#初音演唱
+		name = "GFX_chuyinyanchang"
+		texturefile = "gfx/interface/event_pictures/chuyinyanchang.dds"
+	}
+	spriteType = {#惠惠核爆
+		name = "GFX_huihuihebao"
+		texturefile = "gfx/interface/event_pictures/huihuihebao.dds"
+	}
+	spriteType = {#惠惠招募
+		name = "GFX_huihuizhaomu"
+		texturefile = "gfx/interface/event_pictures/huihuizhaomu.dds"
+	}
+	spriteType = {#肾虚
+		name = "GFX_shenxu"
+		texturefile = "gfx/interface/event_pictures/shenxu.dds"3333333333333333333333333333333333333333333333333333333333333333333333
+	}
+#民族精神图片
+	SpriteType = {#间谍民族精神
+		name = "GFX_idea_jiandieshuangzi"
+		texturefile = "gfx/interface/ideas/jiandieshuangzi.dds"
+	}
+	SpriteType = {#核弹附加精神
+		name = "GFX_idea_hedan"
+		texturefile = "gfx/interface/ideas/hedan.dds"33333333333333333333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#肾虚公子
+		name = "GFX_idea_shenxugongzi"
+		texturefile = "gfx/interface/ideas/shenxugongzi.dds"3333333333333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#初音政权
+		name = "GFX_idea_chuyinzhengquan"
+		texturefile = "gfx/interface/ideas/chuyinzhengquan.dds"
+	}
+	spriteType = {#群情激愤
+		name = "GFX_idea_qunqingjifen"
+		texturefile = "gfx/interface/ideas/qunqingjifen.dds"33333333333333333333333333333333333333333333333333333333333333333
+	}
+	spriteType = {#民之所向
+		name = "GFX_idea_minzhisuoxiang"
+		texturefile = "gfx/interface/ideas/minzhisuoxiang.dds"33333333333333333333333333333333333333333333333333333333333333333333
+	}
+#间谍头像
+	SpriteType = {#千束头像
+		name = "GFX_jiandie_qianshu"
+		texturefile = "gfx/leader/qianshu.dds"
+	}
+	SpriteType = {#泷奈头像
+		name = "GFX_jiandie_longnai"
+		texturefile = "gfx/leader/longnai.dds"
+	}
+}
+	

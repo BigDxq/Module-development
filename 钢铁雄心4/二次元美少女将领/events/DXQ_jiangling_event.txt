@@ -1,0 +1,308 @@
+﻿add_namespace = DXQ_jiangling_event
+
+#开局选择
+country_event = {
+    id = DXQ_jiangling_event.001
+    title = DXQ_jiangling_event.001.t
+    desc = DXQ_jiangling_event.001.d
+    picture = GFX_report_event_generic_read_write
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+        name = DXQ_jiangling_event.001.a
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_Development_dec_tip_1
+		consumer_goods_factor = 0.03
+		add_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.100
+				days = 90
+			}
+		}
+	}
+	option = {
+        name = DXQ_jiangling_event.001.b
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_Development_dec_tip_2
+		consumer_goods_factor = 0.01
+		add_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.200
+				days = 90
+			}
+		}
+	}
+	option = {
+        name = DXQ_jiangling_event.001.c
+        ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_Development_dec_tip_3
+		consumer_goods_factor = 0.03
+		add_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+			news_event = {
+				id = DXQ_jiangling_event.300
+				days = 90
+			}
+		}
+	}
+	option = {
+        name = DXQ_jiangling_event.000.a
+        ai_chance = { factor = 100 }
+		custom_effect_tooltip = DXQ_jiangling_Development_dec_tip_4
+		hidden_effect = { 
+#			news_event = {
+#				id = DXQ_jiangling_event.400
+#				days = 90
+#			}
+		}
+	}	
+}
+#############################################
+#全国范围的强制招募
+#############################################
+news_event = {
+    id = DXQ_jiangling_event.100
+    title = DXQ_jiangling_event.100.a
+    desc = DXQ_jiangling_event.100.b
+    picture = GFX_qiangzhizhaomu
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_event.100.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development100_tip
+		remove_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+		  create_corps_commander = {
+	        name = "诺艾尔"
+	        portrait_path = "gfx/leader/DXQ_jiangling_nuoaier.dds"
+	        traits = { Panzer_Expert Adaptable trait_engineer }
+	        skill = 4
+	        attack_skill = 1
+	        defense_skill = 6
+	        planning_skill = 2
+	        logistics_skill = 2 } 
+		  create_corps_commander = {
+	        name = "雷姆"
+	        portrait_path = "gfx/leader/DXQ_jiangling_leimu.dds"
+	        traits = { Infantry_Expert }
+	        skill = 3
+	        attack_skill = 2
+	        defense_skill = 3
+	        planning_skill = 3
+	        logistics_skill = 4 } 
+		  create_corps_commander = {
+	        name = "拉姆"
+	        portrait_path = "gfx/leader/DXQ_jiangling_lamu.dds"
+	        traits = { Infantry_Expert }
+	        skill = 3
+	        attack_skill = 2
+	        defense_skill = 3
+	        planning_skill = 4
+	        logistics_skill = 4 } 
+		  create_corps_commander = {
+		  name = "惠惠"
+	        portrait_path = "gfx/leader/DXQ_jiangling_huihui.dds"
+	        traits = { bearer_of_artillery trait_reckless }
+	        skill = 5
+	        attack_skill = 8
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1 }
+		  create_corps_commander = {
+	        name = "萌百娘"
+	        portrait_path = "gfx/leader/DXQ_jiangling_mengbai.dds"
+	        traits = { Logistics_Wizard }
+	        skill = 2
+	        attack_skill = 2
+	        defense_skill = 2
+	        planning_skill = 5
+	        logistics_skill = 5 } 
+		  create_corps_commander = {
+	        name = "夏美子"
+	        portrait_path = "gfx/leader/DXQ_jiangling_xiameizi.dds"
+	        traits = { inflexible_strategist trait_reckless organizer }
+	        skill = 3
+	        attack_skill = 2
+	        defense_skill = 4
+	        planning_skill = 2
+	        logistics_skill = 2 }
+		  create_corps_commander = {
+	        name = "花园百合玲"
+	        portrait_path = "gfx/leader/DXQ_jiangling_baiheling.dds"
+	        traits = { trait_cautious harsh_leader harsh_leader trickster }
+	        skill = 4
+	        attack_skill = 3
+	        defense_skill = 3
+	        planning_skill = 3
+	        logistics_skill = 3 }
+		  create_corps_commander = {
+	        name = "白钰袖"
+	        portrait_path = "gfx/leader/DXQ_jiangling_yuxiu.dds"
+	        traits = { brilliant_strategist politically_connected organizer }
+	        skill = 3
+	        attack_skill = 4
+	        defense_skill = 2
+	        planning_skill = 5
+	        logistics_skill = 3 }
+		  create_corps_commander = {
+	        name = "Saber"
+	        portrait_path = "gfx/leader/DXQ_jiangling_Saber.dds"
+	        traits = { infantry_leader infantry_officer war_hero }
+	        skill = 5
+	        attack_skill = 4
+	        defense_skill = 5
+	        planning_skill = 4
+	        logistics_skill = 5 }
+		  create_corps_commander = {
+	        name = "初音未来"
+	        portrait_path = "gfx/leader/DXQ_jiangling_chuyin.dds"
+	        traits = { Logistics_Wizard inspirational_leader }
+	        skill = 3
+	        attack_skill = 2
+	        defense_skill = 2
+	        planning_skill = 5
+	        logistics_skill = 5 }
+		  create_corps_commander = {
+	        name = "户坂遥"
+	        portrait_path = "gfx/leader/DXQ_jiangling_hubanyao.dds"
+	        traits = { career_officer media_personality }
+	        skill = 5
+	        attack_skill = 4
+	        defense_skill = 5
+	        planning_skill = 3
+	        logistics_skill = 3 }
+		  news_event = {
+				id = DXQ_jiangling_jiandie_event.001
+				days = 180}
+#		  news_event = {
+#				id = DXQ_jiangling_event.4001#触发强制招募专属事件
+#				days = 545}
+		}
+	}
+}
+############################################
+#自愿招募
+############################################
+news_event = {
+    id = DXQ_jiangling_event.200
+    title = DXQ_jiangling_event.200.a
+    desc = DXQ_jiangling_event.200.b
+    picture = GFX_ziyuanzhaomu
+    major=no
+    is_triggered_only = yes
+	fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_event.200.c
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = DXQ_jiangling_development200_tip
+		remove_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+		  create_corps_commander = {
+	        name = "户坂遥"
+	        portrait_path = "gfx/leader/DXQ_jiangling_hubanyao.dds"
+	        traits = { career_officer media_personality organizer }
+	        skill = 6
+	        attack_skill = 6
+	        defense_skill = 6
+	        planning_skill = 6
+	        logistics_skill = 6 }
+		  create_corps_commander = {
+	        name = "诺艾尔"
+	        portrait_path = "gfx/leader/DXQ_jiangling_nuoaier.dds"
+	        traits = { Logistics_Wizard Panzer_Expert Adaptable trait_engineer unyielding_defender defensive_doctrine}
+	        skill = 6
+	        attack_skill = 2
+	        defense_skill = 10
+	        planning_skill = 5
+	        logistics_skill = 5 } 
+		  create_corps_commander = {
+	        name = "雷姆"
+	        portrait_path = "gfx/leader/DXQ_jiangling_leimu.dds"
+	        traits = { Logistics_Wizard Infantry_Expert inspirational_leader }
+	        skill = 6
+	        attack_skill = 6
+	        defense_skill = 5
+	        planning_skill = 3
+	        logistics_skill = 7 } 
+		  create_corps_commander = {
+	        name = "拉姆"
+	        portrait_path = "gfx/leader/DXQ_jiangling_lamu.dds"
+	        traits = { Logistics_Wizard Infantry_Expert }
+	        skill = 6
+	        attack_skill = 6
+	        defense_skill = 5
+	        planning_skill = 4
+	        logistics_skill = 7 } 
+		  create_corps_commander = {
+		  name = "惠惠"
+	        portrait_path = "gfx/leader/DXQ_jiangling_huihui.dds"
+	        traits = { bearer_of_artillery trait_reckless aggressive_assaulter }
+	        skill = 7
+	        attack_skill = 10
+	        defense_skill = 1
+	        planning_skill = 1
+	        logistics_skill = 1 }
+		  create_corps_commander = {
+	        name = "萌百娘"
+	        portrait_path = "gfx/leader/DXQ_jiangling_mengbai.dds"
+	        traits = { Logistics_Wizard brilliant_strategist inspirational_leader }
+	        skill = 6
+	        attack_skill = 4
+	        defense_skill = 4
+	        planning_skill = 9
+	        logistics_skill = 9 } 
+		  create_field_marshal = {
+	        name = "初音未来"
+	        portrait_path = "gfx/leader/DXQ_jiangling_chuyin.dds"
+	        traits = { Logistics_Wizard brilliant_strategist inspirational_leader organisational_leader }
+	        skill = 7
+	        attack_skill = 5
+	        defense_skill = 5
+	        planning_skill = 5
+	        logistics_skill = 5 }
+		  news_event = {
+					id = DXQ_jiangling_event.2001
+					days = 545}
+		  news_event = {
+					id = DXQ_jiangling_jiandie_event.001
+					days = 180}
+		}
+	}
+}
+###########################################
+#招募一个
+###########################################
+news_event = {
+    id = DXQ_jiangling_event.300
+    title = DXQ_jiangling_event.300.a
+    desc = DXQ_jiangling_event.300.b
+    picture = GFX_huihuizhaomu
+    major=no
+    is_triggered_only = yes
+    fire_only_once = no
+	option = {
+	    name = DXQ_jiangling_event.300.c
+		ai_chance = { factor = 0 } 
+		custom_effect_tooltip = DXQ_jiangling_development300_tip
+		remove_ideas = DXQ_jiangling_zhaomu_hidden_problem
+		hidden_effect = { 
+		  create_corps_commander = {
+	        name = "惠惠"
+	        portrait_path = "gfx/leader/DXQ_jiangling_huihui.dds"
+	        traits = { bearer_of_artillery aggressive_assaulter offensive_doctrine organizer trickster skilled_staffer adaptable}
+	        skill = 9
+	        attack_skill = 10
+	        defense_skill = 4
+	        planning_skill = 5
+	        logistics_skill = 3 }
+		  news_event = { 
+					id = DXQ_jiangling_event.3001
+					days = 730}
+		}
+	}
+}
+
